@@ -1,5 +1,11 @@
 import React from "react";
-import { Background, Category, FilterBlock, Header } from "./components";
+import {
+  Background,
+  Category,
+  FilterBlock,
+  Header,
+  Management,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
       <Header />
       <Category />
       <FilterBlock />
+      <Management />
     </Background>
   );
 }

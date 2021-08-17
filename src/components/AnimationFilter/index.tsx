@@ -8,7 +8,7 @@ import { IMAGES } from "../../assets";
 export const AnimationFilter: FC<IAnimationFilterProps> = () => {
   return (
     <div className="animation-filter">
-      <img className="phone" src={IMAGES.FILTER_PHONE} />
+      <img className="phone" src={IMAGES.FILTER_PHONE} alt="" />
       <div className="arrow_block">
         <ArrowTitle text="Sold out item" img={IMAGES.ARROW_DOWN} />
         <ArrowTitle

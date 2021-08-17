@@ -6,4 +6,5 @@ export default interface IArrowTitileProps {
   arrowStyle?: CSSProperties;
   blockStyle?: CSSProperties;
   paddingText?: boolean;
+  alignAtem?: boolean;
 }

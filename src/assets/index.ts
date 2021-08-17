@@ -17,7 +17,8 @@ import PROFILE from "./images/profile.svg";
 // phone images
 import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
-import FILTER_PHONE from ".//images/phone_filter.png";
+import FILTER_PHONE from "./images/phone_filter.png";
+import MANAGEMENT_PHONE from "./images/phone_management.png";
 // images for animation (A_)
 import A_CATEGORY from "./images/animation_category.svg";
 import A_RESTAURANT_CARD from "./images/animation_restaurant_card.svg";
@@ -42,6 +43,7 @@ export const IMAGES = {
   HEADER_PHONE,
   CATEGORY_PHONE,
   FILTER_PHONE,
+  MANAGEMENT_PHONE,
   TAB_BAR,
   HOME,
   FOOD,

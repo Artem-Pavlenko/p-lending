@@ -9,8 +9,12 @@ export const ArrowTitle: FC<IArrowTitileProps> = ({
   arrowStyle,
   blockStyle,
   paddingText,
+  alignAtem,
 }) => (
-  <div className="arrow-wrapper" style={blockStyle}>
+  <div
+    className={alignAtem ? "arrow-wrapper align" : "arrow-wrapper"}
+    style={blockStyle}
+  >
     <span className={paddingText ? "text with_padding" : "text"}>{text}</span>
     <img src={img} alt="" style={arrowStyle} />
   </div>
