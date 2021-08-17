@@ -1,0 +1,20 @@
+@import "../../utils/variables.scss";
+
+span {
+  &.main-text {
+    width: 558px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 79px;
+    color: $killarney;
+    margin-bottom: 160px;
+  }
+
+  &.description {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: $mineShaft;
+  }
+}

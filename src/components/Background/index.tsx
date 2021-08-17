@@ -4,6 +4,6 @@ import { IMAGES } from "../../assets";
 import IBackgroundProps from "./props";
 import "./styles.scss";
 
-export const Background: FC<IBackgroundProps> = ({ children }) => {
-  return <div className="background">{children}</div>;
-};
+export const Background: FC<IBackgroundProps> = ({ children }) => (
+  <div className="background">{children}</div>
+);
