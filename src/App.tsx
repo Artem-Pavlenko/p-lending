@@ -5,6 +5,7 @@ import {
   Category,
   FAQ,
   FilterBlock,
+  Footer,
   Header,
   Management,
   PaymentOptions,
@@ -20,6 +21,7 @@ function App() {
       <PaymentOptions />
       <AdminPanel />
       <FAQ />
+      <Footer />
     </Background>
   );
 }

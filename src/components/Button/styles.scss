@@ -13,4 +13,9 @@ button {
   outline: none;
   border: none;
   cursor: pointer;
+
+  &.white {
+    background-color: $white;
+    color: $killarney;
+  }
 }

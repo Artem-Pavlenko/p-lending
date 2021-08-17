@@ -3,6 +3,7 @@ import HEAD from "./images/head.svg";
 import BAMBOO from "./images/bamboo.svg";
 import LEAF_SEC from "./images/leaf_2.svg";
 import LOGO from "./images/logo.svg";
+import LOGO_WHITE from "./images/logo_white.svg";
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
 import ARROW_TOP from "./images/arrow_top.svg";
@@ -43,6 +44,7 @@ export const IMAGES = {
   BAMBOO,
   LEAF_SEC,
   LOGO,
+  LOGO_WHITE,
   ARROW,
   ARROW2,
   ARROW_TOP,

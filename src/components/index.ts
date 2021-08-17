@@ -9,6 +9,7 @@ export * from "./Button";
 export * from "./Category";
 export * from "./FAQ";
 export * from "./FilterBlock";
+export * from "./Footer";
 export * from "./Header";
 export * from "./Management";
 export * from "./Menu";
