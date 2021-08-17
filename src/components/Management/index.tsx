@@ -2,9 +2,7 @@ import { FC } from "react";
 
 import IManagementProps from "./props";
 import "./styles.scss";
-import { AnimationManagement } from "..";
-import { TitleBlock } from "../Title";
-import { ArrowTitle } from "../ArrowTitle";
+import { AnimationManagement, TitleBlock, ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
 
 export const Management: FC<IManagementProps> = () => {

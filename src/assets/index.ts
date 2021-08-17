@@ -19,6 +19,8 @@ import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
 import FILTER_PHONE from "./images/phone_filter.png";
 import MANAGEMENT_PHONE from "./images/phone_management.png";
+import EQUALLY_PHONE from "./images/phone_equally.png";
+import MANUALLY_PHONE from "./images/phone_manually.png";
 // images for animation (A_)
 import A_CATEGORY from "./images/animation_category.svg";
 import A_RESTAURANT_CARD from "./images/animation_restaurant_card.svg";
@@ -27,6 +29,8 @@ import A_MENU_CARD from "./images/animation_menu_card.svg";
 import A_MENU_CARD2 from "./images/animation_menu_card2.svg";
 import A_NAV_BAR from "./images/animation_nav_bar.svg";
 import A_SALE from "./images/animation_sale.svg";
+import A_COUPON from "./images/animation_coupon.svg";
+import A_LIST from "./images/animation_list.svg";
 
 export const IMAGES = {
   LEAF,
@@ -44,6 +48,8 @@ export const IMAGES = {
   CATEGORY_PHONE,
   FILTER_PHONE,
   MANAGEMENT_PHONE,
+  EQUALLY_PHONE,
+  MANUALLY_PHONE,
   TAB_BAR,
   HOME,
   FOOD,
@@ -56,6 +62,8 @@ export const IMAGES = {
   A_MENU_CARD2,
   A_NAV_BAR,
   A_SALE,
+  A_COUPON,
+  A_LIST,
 };
 
 export const FONTS = {

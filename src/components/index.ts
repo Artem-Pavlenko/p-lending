@@ -1,6 +1,7 @@
 export * from "./AnimationCategory";
 export * from "./AnimationFilter";
 export * from "./AnimationManagement";
+export * from "./AnimationPayment";
 export * from "./ArrowTitle";
 export * from "./Background";
 export * from "./Button";
@@ -8,5 +9,6 @@ export * from "./Category";
 export * from "./FilterBlock";
 export * from "./Header";
 export * from "./Management";
+export * from "./PaymentOptions";
 export * from "./Text";
-export * from "./Title";
+export * from "./TitleBlock";

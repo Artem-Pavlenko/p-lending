@@ -3,10 +3,8 @@ import { FC } from "react";
 import ICategoryProps from "./props";
 import { tabbar } from "./data";
 import "./styles.scss";
-import { AnimationCategory } from "..";
+import { AnimationCategory, TitleBlock, ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
-import { ArrowTitle } from "../ArrowTitle";
-import { TitleBlock } from "../Title";
 
 export const Category: FC<ICategoryProps> = () => {
   return (

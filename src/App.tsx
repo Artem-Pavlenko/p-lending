@@ -5,6 +5,7 @@ import {
   FilterBlock,
   Header,
   Management,
+  PaymentOptions,
 } from "./components";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Category />
       <FilterBlock />
       <Management />
+      <PaymentOptions />
     </Background>
   );
 }
