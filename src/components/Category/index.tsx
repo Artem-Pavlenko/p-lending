@@ -26,7 +26,7 @@ export const Category: FC<ICategoryProps> = () => {
           paddingText
           text="Card of the restaurant"
           img={IMAGES.ARROW_LEFT}
-          style={{ position: "absolute", left: "85px", top: "-25px" }}
+          arrowStyle={{ position: "absolute", left: "85px", top: "-25px" }}
         />
         <div className="tab_bar_items">
           <img src={IMAGES.ARROW} alt="" />

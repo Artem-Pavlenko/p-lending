@@ -6,11 +6,12 @@ import "./styles.scss";
 export const ArrowTitle: FC<IArrowTitileProps> = ({
   text,
   img,
-  style,
+  arrowStyle,
+  blockStyle,
   paddingText,
 }) => (
-  <div className="arrow-wrapper">
+  <div className="arrow-wrapper" style={blockStyle}>
     <span className={paddingText ? "text with_padding" : "text"}>{text}</span>
-    <img src={img} alt="" style={style} />
+    <img src={img} alt="" style={arrowStyle} />
   </div>
 );
