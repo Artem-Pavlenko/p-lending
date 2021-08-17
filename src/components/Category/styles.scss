@@ -1,0 +1,42 @@
+.category {
+  display: flex;
+  margin-top: 243px;
+  margin-left: 53px;
+
+  .wrapp {
+    display: flex;
+    margin-right: 120px;
+  }
+
+  .tab_bar_items {
+    display: flex;
+    margin-top: 240px;
+
+    > img {
+      margin-right: 90px;
+    }
+
+    .item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 90px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

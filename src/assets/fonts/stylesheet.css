@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "IndieFlowerDemi";
+  src: url("IndieFlower-Regular.ttf");
+  src: local("Indie Flower"), local("IndieFlowerDemi"),
+    url("IndieFlower-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

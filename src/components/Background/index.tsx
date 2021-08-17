@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { IMAGES } from "../../assets";
 
 import IBackgroundProps from "./props";
 import "./styles.scss";

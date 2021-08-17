@@ -1,0 +1,15 @@
+.categoty-animation-wrapp {
+  padding-top: 20px;
+  position: relative;
+
+  > img {
+    &.tab-bar {
+      width: 570px;
+      height: 104px;
+      object-fit: cover;
+      position: absolute;
+      bottom: -3px;
+      left: -120px;
+    }
+  }
+}

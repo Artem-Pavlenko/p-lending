@@ -1,10 +1,11 @@
 import React from "react";
-import { Background, Header } from "./components";
+import { Background, Category, Header } from "./components";
 
 function App() {
   return (
     <Background>
       <Header />
+      <Category />
     </Background>
   );
 }

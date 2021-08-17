@@ -1,0 +1,24 @@
+@import "../../utils/variables.scss";
+
+.title_block {
+  display: flex;
+  flex-direction: column;
+  max-width: 407px;
+
+  .title {
+    color: $black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 94px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    color: $mineShaft;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
