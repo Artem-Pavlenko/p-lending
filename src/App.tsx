@@ -3,6 +3,7 @@ import {
   AdminPanel,
   Background,
   Category,
+  FAQ,
   FilterBlock,
   Header,
   Management,
@@ -18,6 +19,7 @@ function App() {
       <Management />
       <PaymentOptions />
       <AdminPanel />
+      <FAQ />
     </Background>
   );
 }

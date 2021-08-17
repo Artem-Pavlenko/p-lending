@@ -17,6 +17,8 @@ import PROFILE from "./images/profile.svg";
 import ORDERS from "./images/orders.svg";
 import MENU from "./images/menu.svg";
 import STAFF from "./images/staff.svg";
+import ELLIPSE_1 from "./images/ellipse_1.svg";
+import ELLIPSE_2 from "./images/ellipse_2.svg";
 // phone images
 import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
@@ -61,6 +63,8 @@ export const IMAGES = {
   FOOD,
   SHOPPING,
   PROFILE,
+  ELLIPSE_1,
+  ELLIPSE_2,
   A_CATEGORY,
   A_RESTAURANT_CARD,
   A_MENU_CARD,
