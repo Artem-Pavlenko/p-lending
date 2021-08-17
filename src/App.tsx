@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  AdminPanel,
   Background,
   Category,
   FilterBlock,
@@ -16,6 +17,7 @@ function App() {
       <FilterBlock />
       <Management />
       <PaymentOptions />
+      <AdminPanel />
     </Background>
   );
 }

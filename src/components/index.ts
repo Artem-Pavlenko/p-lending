@@ -1,3 +1,4 @@
+export * from "./AdminPanel";
 export * from "./AnimationCategory";
 export * from "./AnimationFilter";
 export * from "./AnimationManagement";
@@ -9,6 +10,9 @@ export * from "./Category";
 export * from "./FilterBlock";
 export * from "./Header";
 export * from "./Management";
+export * from "./Menu";
+export * from "./Orders";
 export * from "./PaymentOptions";
+export * from "./Staff";
 export * from "./Text";
 export * from "./TitleBlock";

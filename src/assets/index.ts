@@ -14,6 +14,9 @@ import HOME from "./images/house.svg";
 import FOOD from "./images/food.svg";
 import SHOPPING from "./images/shopping.svg";
 import PROFILE from "./images/profile.svg";
+import ORDERS from "./images/orders.svg";
+import MENU from "./images/menu.svg";
+import STAFF from "./images/staff.svg";
 // phone images
 import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
@@ -44,6 +47,9 @@ export const IMAGES = {
   ARROW_RIGHT,
   ARROW_LEFT,
   ARROW_DOWN,
+  ORDERS,
+  MENU,
+  STAFF,
   HEADER_PHONE,
   CATEGORY_PHONE,
   FILTER_PHONE,
