@@ -1,34 +1,17 @@
-import { FC, RefObject, useEffect, useRef, useState } from "react";
+import { FC, useRef } from "react";
 
 import IAnimationCategoryProps from "./props";
 import "./styles.scss";
 import { IMAGES } from "../../assets";
+import { useShowAnimation } from "../../utils/hooks";
 
 export const AnimationCategory: FC<IAnimationCategoryProps> = () => {
-  const [isShowAnimation, setIsShowAnimation] = useState<boolean>(false);
+  const animationRef = useRef<HTMLDivElement>(null);
 
-  const wrappRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const playAnimation = <T extends HTMLElement>(ref: RefObject<T>) => {
-      if (ref.current && window.pageYOffset >= ref.current.offsetTop) {
-        setIsShowAnimation(true);
-      }
-    };
-
-    window.addEventListener("scroll", () =>
-      playAnimation<HTMLDivElement>(wrappRef)
-    );
-
-    return () => {
-      window.removeEventListener("scroll", () =>
-        playAnimation<HTMLDivElement>(wrappRef)
-      );
-    };
-  }, []);
+  const { isShowAnimation } = useShowAnimation<HTMLDivElement>(animationRef);
 
   return (
-    <div ref={wrappRef} className="categoty_animation_wrapp">
+    <div ref={animationRef} className="categoty_animation_wrapp">
       <img src={IMAGES.CATEGORY_PHONE} alt="" />
       <img
         src={IMAGES.A_TAB_BAR}

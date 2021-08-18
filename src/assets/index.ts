@@ -30,7 +30,7 @@ import MANUALLY_PHONE from "./images/phone_manually.png";
 // images for animation (A_)
 import A_CATEGORY from "./images/animation_category.svg";
 import A_RESTAURANT_CARD from "./images/animation_restaurant_card.svg";
-import A_FILTER from "./images/animation_filter.svg";
+import A_VEGETARIAN from "./images/animation_filter.svg";
 import A_MENU_CARD from "./images/animation_menu_card.svg";
 import A_MENU_CARD2 from "./images/animation_menu_card2.svg";
 import A_NAV_BAR from "./images/animation_nav_bar.svg";
@@ -71,7 +71,7 @@ export const IMAGES = {
   A_CATEGORY,
   A_RESTAURANT_CARD,
   A_MENU_CARD,
-  A_FILTER,
+  A_VEGETARIAN,
   A_MENU_CARD2,
   A_NAV_BAR,
   A_SALE,

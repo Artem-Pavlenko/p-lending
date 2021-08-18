@@ -8,6 +8,7 @@ export * from "./Background";
 export * from "./Button";
 export * from "./Category";
 export * from "./FAQ";
+export * from "./Filter";
 export * from "./FilterBlock";
 export * from "./Footer";
 export * from "./Header";

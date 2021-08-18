@@ -1,36 +1,44 @@
-import { FC } from "react";
+import { FC, useRef } from "react";
 
 import IAnimationFilterProps from "./props";
 import "./styles.scss";
-import { ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
+import { useShowAnimation } from "../../utils/hooks";
 
 export const AnimationFilter: FC<IAnimationFilterProps> = () => {
+  const animationRef = useRef<HTMLDivElement>(null);
+
+  const { isShowAnimation } = useShowAnimation<HTMLDivElement>(animationRef);
+
   return (
-    <div className="animation-filter">
+    <div ref={animationRef} className="animation_wrapper">
+      <img
+        className={`vegetarian ${isShowAnimation && "animation"}`}
+        src={IMAGES.A_VEGETARIAN}
+        alt=""
+      />
+      <img
+        className={`filter_bar ${isShowAnimation && "animation"}`}
+        src={IMAGES.A_NAV_BAR}
+        alt=""
+      />
+      <img
+        className={`disabled_card ${isShowAnimation && "animation"}`}
+        src={IMAGES.A_MENU_CARD}
+        alt=""
+      />
+      <img
+        className={`sale ${isShowAnimation && "animation"}`}
+        alt=""
+        src={IMAGES.A_SALE}
+      />
+      <img
+        className={`card ${isShowAnimation && "animation"}`}
+        alt=""
+        src={IMAGES.A_MENU_CARD2}
+      />
+
       <img className="phone" src={IMAGES.FILTER_PHONE} alt="" />
-      <div className="arrow_block">
-        <ArrowTitle text="Sold out item" img={IMAGES.ARROW_DOWN} />
-        <ArrowTitle
-          paddingText
-          text="Discount"
-          img={IMAGES.ARROW2}
-          blockStyle={{ marginTop: "240px", marginBottom: "350px" }}
-          arrowStyle={{
-            position: "absolute",
-            top: "-38px",
-            left: "100px",
-            height: "15px",
-            width: "53px",
-          }}
-        />
-        <ArrowTitle
-          alignAtem
-          text="Menu item"
-          img={IMAGES.ARROW_TOP}
-          arrowStyle={{ position: "absolute", top: "-150px", right: "195px" }}
-        />
-      </div>
     </div>
   );
 };

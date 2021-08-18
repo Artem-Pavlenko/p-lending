@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import IFilterBlockProps from "./props";
 import "./styles.scss";
-import { TitleBlock, AnimationFilter, ArrowTitle } from "..";
+import { TitleBlock, Filter, ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
 
 export const FilterBlock: FC<IFilterBlockProps> = () => {
@@ -25,7 +25,7 @@ export const FilterBlock: FC<IFilterBlockProps> = () => {
           }}
         />
       </div>
-      <AnimationFilter />
+      <Filter />
     </div>
   );
 };

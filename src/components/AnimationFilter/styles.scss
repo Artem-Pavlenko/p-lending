@@ -1,13 +1,62 @@
-.animation-filter {
-  padding-top: 20px;
-  margin-left: 71px;
-  display: flex;
+.animation_wrapper {
+  position: relative;
 
-  .phone {
-    height: 661px;
-  }
+  img {
+    position: absolute;
+    transition: all 0.5s ease-in;
 
-  .arrow_block {
-    margin-left: 30px;
+    &.vegetarian {
+      top: 60px;
+      left: -110px;
+
+      &.animation {
+        top: 80px;
+        left: -90px;
+      }
+    }
+
+    &.filter_bar {
+      top: 149px;
+      left: -110px;
+
+      &.animation {
+        left: -50px;
+      }
+    }
+
+    &.disabled_card {
+      top: 120px;
+      right: -290px;
+
+      &.animation {
+        top: 200px;
+        right: -250px;
+      }
+    }
+
+    &.sale {
+      top: 387px;
+      right: -150px;
+
+      &.animation {
+        right: -95px;
+      }
+    }
+
+    &.card {
+      bottom: 95px;
+      right: -290px;
+
+      &.animation {
+        bottom: 120px;
+        right: -250px;
+      }
+    }
+
+    &.phone {
+      position: static;
+      margin-top: 30px;
+      height: 661px;
+    }
   }
 }
