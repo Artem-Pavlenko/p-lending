@@ -1,15 +1,44 @@
-.categoty-animation-wrapp {
+.categoty_animation_wrapp {
   padding-top: 20px;
   position: relative;
 
-  > img {
-    &.tab-bar {
-      width: 570px;
-      height: 104px;
-      object-fit: cover;
-      position: absolute;
+  .tab_bar_img {
+    position: absolute;
+    bottom: -53px;
+    left: -120px;
+    width: 570px;
+    height: 104px;
+    object-fit: cover;
+
+    &.animation {
       bottom: -3px;
-      left: -120px;
+      transition: all 1s ease-in;
+    }
+  }
+
+  .category_img {
+    position: absolute;
+    top: 90px;
+    left: -125px;
+    width: 180px;
+    height: 213px;
+
+    &.animation {
+      top: 120px;
+      left: -55px;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .card_img {
+    position: absolute;
+    top: 275px;
+    left: 127px;
+
+    &.animation {
+      top: 325px;
+      left: 77px;
+      transition: all 1s ease-out;
     }
   }
 }

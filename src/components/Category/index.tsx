@@ -24,12 +24,12 @@ export const Category: FC<ICategoryProps> = () => {
           paddingText
           text="Card of the restaurant"
           img={IMAGES.ARROW_LEFT}
-          arrowStyle={{ position: "absolute", left: "85px", top: "-25px" }}
+          arrowStyle={{ position: "absolute", left: "120px", top: "-25px" }}
         />
         <div className="tab_bar_items">
           <img src={IMAGES.ARROW} alt="" />
           {tabbar.map(({ img, name }) => (
-            <div className="item">
+            <div key={name} className="item">
               <img src={img} alt="" />
               <span className="item_name">{name}</span>
             </div>

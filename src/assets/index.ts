@@ -10,7 +10,7 @@ import ARROW_TOP from "./images/arrow_top.svg";
 import ARROW_RIGHT from "./images/arrow_right.svg";
 import ARROW_LEFT from "./images/arrow_left.svg";
 import ARROW_DOWN from "./images/arrow_down.svg";
-import TAB_BAR from "./images/tab_bar.png";
+
 import HOME from "./images/house.svg";
 import FOOD from "./images/food.svg";
 import SHOPPING from "./images/shopping.svg";
@@ -37,6 +37,7 @@ import A_NAV_BAR from "./images/animation_nav_bar.svg";
 import A_SALE from "./images/animation_sale.svg";
 import A_COUPON from "./images/animation_coupon.svg";
 import A_LIST from "./images/animation_list.svg";
+import A_TAB_BAR from "./images/tab_bar.png";
 
 export const IMAGES = {
   LEAF,
@@ -60,7 +61,7 @@ export const IMAGES = {
   MANAGEMENT_PHONE,
   EQUALLY_PHONE,
   MANUALLY_PHONE,
-  TAB_BAR,
+  A_TAB_BAR,
   HOME,
   FOOD,
   SHOPPING,

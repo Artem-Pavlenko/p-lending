@@ -9,7 +9,7 @@ export const Text: FC<ITextProps> = ({
   type = TextStyles.Description,
   width = 407,
 }) => (
-  <span className={type} style={{ width: `${width}px;` }}>
+  <span className={type} style={{ width: `${width}px` }}>
     {children}
   </span>
 );
