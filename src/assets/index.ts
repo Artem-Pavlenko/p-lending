@@ -40,9 +40,9 @@ import A_LIST from "./images/animation_list.svg";
 
 export const IMAGES = {
   LEAF,
+  LEAF_SEC,
   HEAD,
   BAMBOO,
-  LEAF_SEC,
   LOGO,
   LOGO_WHITE,
   ARROW,

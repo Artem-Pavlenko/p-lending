@@ -10,9 +10,15 @@ export const Footer: FC<IFooterProps> = () => {
     <footer className="footer">
       <div className="footer_nav">
         <img src={IMAGES.LOGO_WHITE} alt="" />
-        <a className="link">Privecy Policy</a>
-        <a className="link">Terms&Conditions</a>
-        <a className="link email">support@pandamenus.com</a>
+        <a href="/#" className="link">
+          Privecy Policy
+        </a>
+        <a href="/#" className="link">
+          Terms&Conditions
+        </a>
+        <a href="mailto:support@pandamenus.com" className="link email">
+          support@pandamenus.com
+        </a>
         <Button whiteStyle text="Join us" />
       </div>
     </footer>

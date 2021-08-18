@@ -25,9 +25,10 @@ export const AnimationFilter: FC<IAnimationFilterProps> = () => {
           }}
         />
         <ArrowTitle
+          alignAtem
           text="Menu item"
           img={IMAGES.ARROW_TOP}
-          arrowStyle={{ position: "absolute", top: "-150px", right: "95px" }}
+          arrowStyle={{ position: "absolute", top: "-150px", right: "195px" }}
         />
       </div>
     </div>
