@@ -1,0 +1,22 @@
+@import "../../utils/variables.scss";
+
+.tab_bar_item {
+  position: absolute;
+  min-width: 120px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $fringyFlower;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 10px 10px;
+  padding: 0 20px;
+  transition: all 0.5s ease-in;
+
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  color: $killarney;
+}

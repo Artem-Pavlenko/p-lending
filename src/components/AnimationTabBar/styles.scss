@@ -1,0 +1,27 @@
+.animation_tab_bar {
+  position: relative;
+
+  .lunch {
+    top: 0;
+    left: 120px;
+    &.animation {
+      top: 52px;
+    }
+  }
+
+  .brunch {
+    top: 0;
+    left: 240px;
+    &.animation {
+      top: 102px;
+    }
+  }
+
+  .all {
+    top: 0;
+    left: 360px;
+    &.animation {
+      top: 156px;
+    }
+  }
+}
