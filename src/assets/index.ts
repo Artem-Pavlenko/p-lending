@@ -4,7 +4,16 @@ import BAMBOO from "./images/bamboo.svg";
 import LEAF_SEC from "./images/leaf_2.svg";
 import LOGO from "./images/logo.svg";
 import LOGO_WHITE from "./images/logo_white.svg";
-
+import HOME from "./images/house.svg";
+import FOOD from "./images/food.svg";
+import SHOPPING from "./images/shopping.svg";
+import PROFILE from "./images/profile.svg";
+import ORDERS from "./images/orders.svg";
+import MENU from "./images/menu.svg";
+import STAFF from "./images/staff.svg";
+import ELLIPSE_1 from "./images/ellipse_1.svg";
+import ELLIPSE_2 from "./images/ellipse_2.svg";
+// arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
 import ARROW_TOP from "./images/arrow_top.svg";
@@ -23,16 +32,11 @@ import ARROW_MAIN from "./images/arrow_main.svg";
 import ARROW_MENU_ITEM from "./images/arrow_menu_item.svg";
 import ARROW_MENU from "./images/arrow_menu.svg";
 import ARROW_SOLD from "./images/arrow_sold.svg";
+import ARROW_GENERAL from "./images/arrow_general.svg";
+import ARROW_ADD_STAFF from "./images/arrow_add_staff.svg";
+import ARROW_WAITERS from "./images/arrow_waiters_1.svg";
+import ARROW_WAITERS_2 from "./images/arrow_waiters_2.svg";
 
-import HOME from "./images/house.svg";
-import FOOD from "./images/food.svg";
-import SHOPPING from "./images/shopping.svg";
-import PROFILE from "./images/profile.svg";
-import ORDERS from "./images/orders.svg";
-import MENU from "./images/menu.svg";
-import STAFF from "./images/staff.svg";
-import ELLIPSE_1 from "./images/ellipse_1.svg";
-import ELLIPSE_2 from "./images/ellipse_2.svg";
 // phone images
 import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
@@ -54,6 +58,7 @@ import A_TAB_BAR from "./images/tab_bar.png";
 // screen images
 import ORDERS_SCREEN from "./images/orders_screen.svg";
 import MENU_SCREEN from "./images/menu_screen.svg";
+import STAFF_SCREEN from "./images/staff_screen.svg";
 
 export const IMAGES = {
   LEAF,
@@ -80,6 +85,10 @@ export const IMAGES = {
   ARROW_MENU_ITEM,
   ARROW_MENU,
   ARROW_SOLD,
+  ARROW_GENERAL,
+  ARROW_ADD_STAFF,
+  ARROW_WAITERS,
+  ARROW_WAITERS_2,
   ORDERS,
   MENU,
   STAFF,
@@ -107,6 +116,7 @@ export const IMAGES = {
   A_LIST,
   ORDERS_SCREEN,
   MENU_SCREEN,
+  STAFF_SCREEN,
 };
 
 export const FONTS = {
