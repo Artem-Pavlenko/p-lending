@@ -6,6 +6,7 @@ export * from "./AnimationManagement";
 export * from "./AnimationManually";
 export * from "./AnimationTabBar";
 export * from "./ArrowTitle";
+export * from "./ArticleHeading";
 export * from "./Background";
 export * from "./Button";
 export * from "./Category";
