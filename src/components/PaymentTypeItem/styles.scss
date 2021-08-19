@@ -1,0 +1,19 @@
+@import "../../utils/variables.scss";
+
+.payment_type_item {
+  position: absolute;
+  width: 157px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $killarney;
+  box-shadow: 0px 10px 44px rgba(87, 87, 87, 0.18);
+  border-radius: 100px;
+  transition: all 0.5s ease-in;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: $white;
+}

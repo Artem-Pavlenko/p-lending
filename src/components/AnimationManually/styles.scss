@@ -1,0 +1,12 @@
+.animation_manually {
+  position: relative;
+
+  .manually {
+    top: 110px;
+    right: -90px;
+    &.animation {
+      top: 140px;
+      right: -50px;
+    }
+  }
+}

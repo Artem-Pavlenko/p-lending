@@ -2,11 +2,14 @@ import { FC } from "react";
 
 import IPaymentOptionsProps from "./props";
 import "./styles.scss";
-import { TitleBlock, AnimationPayment } from "..";
+import { TitleBlock, DescriptionsPayment } from "..";
+import { useShowAnimation } from "../../utils/hooks";
 
 export const PaymentOptions: FC<IPaymentOptionsProps> = () => {
+  const { isShowAnimation, animationRef } = useShowAnimation<HTMLDivElement>();
+
   return (
-    <div className="payment_options">
+    <div ref={animationRef} className="payment_options">
       <TitleBlock
         center
         maxWidth={725}
@@ -16,7 +19,7 @@ export const PaymentOptions: FC<IPaymentOptionsProps> = () => {
          adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc 
          schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
       />
-      <AnimationPayment />
+      <DescriptionsPayment isShowAnimation={isShowAnimation} />
     </div>
   );
 };

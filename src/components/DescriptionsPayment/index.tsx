@@ -2,14 +2,16 @@ import { FC } from "react";
 
 import IAnimationPaymentProps from "./props";
 import "./styles.scss";
+import { ArrowTitle, AnimationEqualyy, AnimationManually } from "..";
 import { IMAGES } from "../../assets";
-import { ArrowTitle } from "..";
 
-export const AnimationPayment: FC<IAnimationPaymentProps> = () => {
+export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
+  isShowAnimation,
+}) => {
   return (
     <div className="payment_types">
       <div className="phone_wrapper">
-        <img src={IMAGES.EQUALLY_PHONE} alt="" />
+        <AnimationEqualyy isShowAnimation={isShowAnimation} />
         <ArrowTitle
           text="Equally"
           img={IMAGES.ARROW_LEFT}
@@ -39,7 +41,7 @@ export const AnimationPayment: FC<IAnimationPaymentProps> = () => {
             transform: "rotate(160deg)",
           }}
         />
-        <img src={IMAGES.MANUALLY_PHONE} alt="" />
+        <AnimationManually isShowAnimation={isShowAnimation} />
       </div>
     </div>
   );
