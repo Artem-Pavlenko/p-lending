@@ -18,6 +18,11 @@ import ARROW_FILTER from "./images/arrow_filter.svg";
 import ARROW_ORDER from "./images/arrow_order.svg";
 import ARROW_PICK from "./images/arrow_pick.svg";
 import ARROW_TAB_BAR from "./images/arrow_tab_bar.svg";
+import ARROW_DISCOUNT from "./images/arrow_discount.svg";
+import ARROW_MAIN from "./images/arrow_main.svg";
+import ARROW_MENU_ITEM from "./images/arrow_menu_item.svg";
+import ARROW_MENU from "./images/arrow_menu.svg";
+import ARROW_SOLD from "./images/arrow_sold.svg";
 
 import HOME from "./images/house.svg";
 import FOOD from "./images/food.svg";
@@ -48,6 +53,7 @@ import A_LIST from "./images/animation_list.svg";
 import A_TAB_BAR from "./images/tab_bar.png";
 // screen images
 import ORDERS_SCREEN from "./images/orders_screen.svg";
+import MENU_SCREEN from "./images/menu_screen.svg";
 
 export const IMAGES = {
   LEAF,
@@ -68,7 +74,12 @@ export const IMAGES = {
   ARROW_FILTER,
   ARROW_ORDER,
   ARROW_PICK,
+  ARROW_DISCOUNT,
   ARROW_TAB_BAR,
+  ARROW_MAIN,
+  ARROW_MENU_ITEM,
+  ARROW_MENU,
+  ARROW_SOLD,
   ORDERS,
   MENU,
   STAFF,
@@ -95,6 +106,7 @@ export const IMAGES = {
   A_COUPON,
   A_LIST,
   ORDERS_SCREEN,
+  MENU_SCREEN,
 };
 
 export const FONTS = {

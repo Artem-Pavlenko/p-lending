@@ -17,7 +17,7 @@ export const Orders: FC<IOrdersProps> = () => {
   return (
     <div className="admin_panel_block">
       <img src={IMAGES.ORDERS} alt="1.Orders" className="img" />
-      <div className="orders_screen_wrapper">
+      <div className="screen_wrapper">
         <ArrowTitle
           text="Tab bar"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing "
