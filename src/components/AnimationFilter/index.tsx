@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC } from "react";
 
 import IAnimationFilterProps from "./props";
 import "./styles.scss";
@@ -6,9 +6,7 @@ import { IMAGES } from "../../assets";
 import { useShowAnimation } from "../../utils/hooks";
 
 export const AnimationFilter: FC<IAnimationFilterProps> = () => {
-  const animationRef = useRef<HTMLDivElement>(null);
-
-  const { isShowAnimation } = useShowAnimation<HTMLDivElement>(animationRef);
+  const { isShowAnimation, animationRef } = useShowAnimation<HTMLDivElement>();
 
   return (
     <div ref={animationRef} className="animation_wrapper">

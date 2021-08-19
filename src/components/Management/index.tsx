@@ -11,6 +11,7 @@ export const Management: FC<IManagementProps> = () => {
       <AnimationManagement />
       <div className="description_block">
         <TitleBlock
+          marginBottom={100}
           title="Title"
           description="Lorem ipsum dolor sit amet, consectetur
            adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc
@@ -28,7 +29,7 @@ export const Management: FC<IManagementProps> = () => {
             height: "23.5px",
             transform: "rotate(-160deg)",
           }}
-          blockStyle={{ marginBottom: "147px" }}
+          blockStyle={{ marginBottom: "110px" }}
         />
         <ArrowTitle
           alignAtem

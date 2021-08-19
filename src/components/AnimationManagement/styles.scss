@@ -1,2 +1,38 @@
 .animation_management {
+  position: relative;
+
+  > img {
+    position: absolute;
+    transition: all 0.5s ease-in;
+
+    &.list {
+      top: 98px;
+      right: -220px;
+      &.animation {
+        right: -150px;
+      }
+    }
+
+    &.coupon {
+      top: 370px;
+      right: -290px;
+      &.animation {
+        top: 345px;
+        right: -210px;
+      }
+    }
+
+    &.phone {
+      position: static;
+    }
+  }
+
+  .tab_item {
+    transform: rotate(-90deg);
+    top: 164px;
+    left: -100px;
+    &.animation {
+      left: -60px;
+    }
+  }
 }

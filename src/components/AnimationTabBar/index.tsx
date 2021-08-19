@@ -1,4 +1,4 @@
-import { FC, useRef } from "react";
+import { FC } from "react";
 
 import IAnimationTabBarProps from "./props";
 import "./styles.scss";
@@ -7,9 +7,7 @@ import { useShowAnimation } from "../../utils/hooks";
 import { IMAGES } from "../../assets";
 
 export const AnimationTabBar: FC<IAnimationTabBarProps> = () => {
-  const animationRef = useRef<HTMLDivElement>(null);
-
-  const { isShowAnimation } = useShowAnimation<HTMLDivElement>(animationRef);
+  const { isShowAnimation, animationRef } = useShowAnimation<HTMLDivElement>();
 
   return (
     <div ref={animationRef} className="animation_tab_bar">
