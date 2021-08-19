@@ -8,14 +8,23 @@ export const ArrowTitle: FC<IArrowTitileProps> = ({
   img,
   arrowStyle,
   blockStyle,
+  descriptionStyle,
   paddingText,
   alignAtem,
+  description,
+  hover,
 }) => (
-  <div
-    className={alignAtem ? "arrow-wrapper align" : "arrow-wrapper"}
-    style={blockStyle}
-  >
-    <span className={paddingText ? "text with_padding" : "text"}>{text}</span>
+  <div className={`arrow_wrapper ${alignAtem && "align"}`} style={blockStyle}>
+    <span
+      className={`text ${paddingText && "with_padding"}  ${hover && "hover"}`}
+    >
+      {text}
+    </span>
+    {description && (
+      <span className="description" style={descriptionStyle}>
+        {description}
+      </span>
+    )}
     <img src={img} alt="" style={arrowStyle} />
   </div>
 );

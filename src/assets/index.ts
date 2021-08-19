@@ -4,12 +4,20 @@ import BAMBOO from "./images/bamboo.svg";
 import LEAF_SEC from "./images/leaf_2.svg";
 import LOGO from "./images/logo.svg";
 import LOGO_WHITE from "./images/logo_white.svg";
+
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
 import ARROW_TOP from "./images/arrow_top.svg";
 import ARROW_RIGHT from "./images/arrow_right.svg";
 import ARROW_LEFT from "./images/arrow_left.svg";
 import ARROW_DOWN from "./images/arrow_down.svg";
+import ARROW_BILL from "./images/arrow_bill.svg";
+import ARROW_CHAT from "./images/arrow_chat.svg";
+import ARROW_CHECK from "./images/arrow_check.svg";
+import ARROW_FILTER from "./images/arrow_filter.svg";
+import ARROW_ORDER from "./images/arrow_order.svg";
+import ARROW_PICK from "./images/arrow_pick.svg";
+import ARROW_TAB_BAR from "./images/arrow_tab_bar.svg";
 
 import HOME from "./images/house.svg";
 import FOOD from "./images/food.svg";
@@ -38,6 +46,8 @@ import A_SALE from "./images/animation_sale.svg";
 import A_COUPON from "./images/animation_coupon.svg";
 import A_LIST from "./images/animation_list.svg";
 import A_TAB_BAR from "./images/tab_bar.png";
+// screen images
+import ORDERS_SCREEN from "./images/orders_screen.svg";
 
 export const IMAGES = {
   LEAF,
@@ -52,6 +62,13 @@ export const IMAGES = {
   ARROW_RIGHT,
   ARROW_LEFT,
   ARROW_DOWN,
+  ARROW_BILL,
+  ARROW_CHAT,
+  ARROW_CHECK,
+  ARROW_FILTER,
+  ARROW_ORDER,
+  ARROW_PICK,
+  ARROW_TAB_BAR,
   ORDERS,
   MENU,
   STAFF,
@@ -77,6 +94,7 @@ export const IMAGES = {
   A_SALE,
   A_COUPON,
   A_LIST,
+  ORDERS_SCREEN,
 };
 
 export const FONTS = {

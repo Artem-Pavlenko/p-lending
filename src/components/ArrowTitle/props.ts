@@ -5,6 +5,9 @@ export default interface IArrowTitileProps {
   img: string;
   arrowStyle?: CSSProperties;
   blockStyle?: CSSProperties;
+  descriptionStyle?: CSSProperties;
   paddingText?: boolean;
   alignAtem?: boolean;
+  description?: string;
+  hover?: boolean;
 }

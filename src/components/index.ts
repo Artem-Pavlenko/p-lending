@@ -15,6 +15,7 @@ export * from "./Filter";
 export * from "./FilterBlock";
 export * from "./Footer";
 export * from "./Header";
+export * from "./HiddenWrapper";
 export * from "./Management";
 export * from "./Menu";
 export * from "./Orders";

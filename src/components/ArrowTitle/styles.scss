@@ -1,19 +1,26 @@
-.arrow-wrapper {
+@import "../../utils/variables.scss";
+
+.arrow_wrapper {
   min-height: 30px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: normal;
+  line-height: 24px;
   font-size: 40px;
+
   &.align {
     align-items: flex-start;
   }
 
   .text {
-    font-weight: normal;
-    line-height: 24px;
     &.with_padding {
       padding-left: 180px;
+    }
+    &.hover {
+      text-shadow: 1px 0px 0px black, -1px 0 0 black;
+      transition: all 0.3s linear;
     }
   }
 
@@ -21,5 +28,16 @@
     width: 89px;
     height: 89px;
     margin-top: 42px;
+  }
+
+  .description {
+    width: 202px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: $mineShaft;
+    margin-top: 19px;
   }
 }

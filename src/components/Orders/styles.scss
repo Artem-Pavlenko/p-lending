@@ -4,9 +4,21 @@
   flex-direction: column;
   padding: 0 80px;
 
+  margin-bottom: 338px;
+
   .img {
     width: 205px;
     height: 68px;
-    margin-bottom: 92px;
+    margin-bottom: 285px;
+  }
+
+  .orders_screen_wrapper {
+    position: relative;
+    display: flex;
+    width: 1320px;
+
+    .orders_screen {
+      position: absolute;
+    }
   }
 }
