@@ -13,6 +13,7 @@ import MENU from "./images/menu.svg";
 import STAFF from "./images/staff.svg";
 import ELLIPSE_1 from "./images/ellipse_1.svg";
 import ELLIPSE_2 from "./images/ellipse_2.svg";
+import PANDA from "./images/panda.svg";
 // arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
@@ -67,6 +68,7 @@ export const IMAGES = {
   BAMBOO,
   LOGO,
   LOGO_WHITE,
+  PANDA,
   ARROW,
   ARROW2,
   ARROW_TOP,

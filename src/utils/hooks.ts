@@ -1,8 +1,10 @@
 import { RefObject, useEffect, useRef, useState } from "react";
 
+import { IAnimation } from "./types";
+
 export const useShowAnimation = <T extends HTMLElement>(
   distance: number = 250
-) => {
+): IAnimation<T> => {
   const [isShowAnimation, setIsShowAnimation] = useState<boolean>(false);
   const animationRef = useRef<T>(null);
 
@@ -21,7 +23,7 @@ export const useShowAnimation = <T extends HTMLElement>(
     return () => {
       window.removeEventListener("scroll", () => playAnimation(animationRef));
     };
-  }, []);
+  }, [distance]);
 
   return { isShowAnimation, animationRef };
 };

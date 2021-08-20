@@ -1,0 +1,43 @@
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .input_title {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #35644a;
+    padding-left: 40px;
+    margin-bottom: 10px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 14px;
+      width: 16px;
+      height: 16px;
+      background: url("../../assets/images/panda.svg") center no-repeat;
+    }
+  }
+
+  input {
+    width: 300px;
+    height: 34px;
+    border-radius: 100px;
+    border: 1px solid rgba(53, 100, 74, 0.15);
+    outline: none;
+    padding-left: 15px;
+
+    &::placeholder {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 19px;
+      color: rgba(150, 150, 150, 0.5);
+    }
+  }
+}

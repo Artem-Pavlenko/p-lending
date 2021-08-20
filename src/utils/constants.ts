@@ -3,6 +3,7 @@ export enum TextStyles {
   Description = "description",
   ArticleHeader = "article-header",
   ArticleText = "article",
+  ModalHeader = "modal-header",
 }
 
 export enum Routes {

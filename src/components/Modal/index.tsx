@@ -1,9 +1,18 @@
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 
 import IModalProps from "./props";
 import "./styles.scss";
+import { Input, Text, Button } from "..";
+import { IMAGES } from "../../assets";
+import { TextStyles } from "../../utils/constants";
 
 export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
+  const [restaurantName, setRestaurantName] = useState("");
+  const [position, setPosition] = useState("");
+  const [address, setAddress] = useState("");
+  const [website, setWebsite] = useState("");
+  const [name, setName] = useState("");
+
   useEffect(() => {
     if (showModal) {
       document.body.style.height = "100vh";
@@ -18,7 +27,54 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
 
   return (
     <div onClick={onClose} className={`modal_wrapper ${showModal && "active"}`}>
-      <div className={`modal_content ${showModal && "active"}`}></div>
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className={`modal_content ${showModal && "active"}`}
+      >
+        <div className="close_button" onClick={onClose} />
+
+        <Text type={TextStyles.ModalHeader}>Join us!</Text>
+
+        <form>
+          <Input
+            value={name}
+            onChange={setName}
+            title="Name"
+            placeholder="Name"
+          />
+
+          <div className="fields_wrapper">
+            <Input
+              value={position}
+              onChange={setPosition}
+              title="Position at the Venue"
+              placeholder="Position"
+            />
+            <Input
+              value={address}
+              onChange={setAddress}
+              title="Address"
+              placeholder="Address"
+            />
+            <Input
+              value={restaurantName}
+              onChange={setRestaurantName}
+              title="Name of Restaurants"
+              placeholder="Name"
+            />
+            <Input
+              value={website}
+              onChange={setWebsite}
+              title="Website"
+              placeholder="Website"
+            />
+          </div>
+          <Button className="center" text="Join us" onClick={() => {}} />
+        </form>
+
+        <img className="leaf" src={IMAGES.LEAF} alt="" />
+        <img className="bamboo" src={IMAGES.BAMBOO} alt="" />
+      </div>
     </div>
   );
 };
