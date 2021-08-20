@@ -6,11 +6,12 @@
     object-fit: cover;
 
     &.logo {
+      position: fixed;
+      z-index: 899;
       top: 35px;
       left: 120px;
       width: 120px;
       height: 33px;
-      position: fixed;
       cursor: pointer;
     }
 
@@ -40,7 +41,7 @@
   .gradient_fixed {
     position: fixed;
     left: 0;
-    z-index: -1;
+    z-index: 898;
     width: 100%;
     height: 104px;
     background: linear-gradient(
@@ -54,5 +55,18 @@
     display: flex;
     flex-direction: column;
     padding: 192px 0 0 120px;
+
+    .button_wrapper {
+      top: 30px;
+      right: calc(90% - 450px);
+
+      &.animation {
+        transition: all 1s ease-in-out;
+        position: fixed;
+        top: 30px;
+        right: 80px;
+        z-index: 899;
+      }
+    }
   }
 }

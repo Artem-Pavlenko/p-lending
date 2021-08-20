@@ -7,7 +7,8 @@ import { useShowAnimation } from "../../utils/hooks";
 import { IMAGES } from "../../assets";
 
 export const AnimationTabBar: FC<IAnimationTabBarProps> = () => {
-  const { isShowAnimation, animationRef } = useShowAnimation<HTMLDivElement>();
+  const { isShowAnimation, animationRef } =
+    useShowAnimation<HTMLDivElement>(320);
 
   return (
     <div ref={animationRef} className="animation_tab_bar">

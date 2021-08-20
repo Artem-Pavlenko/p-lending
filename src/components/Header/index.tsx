@@ -5,8 +5,12 @@ import "./styles.scss";
 import { Button, Text } from "..";
 import { IMAGES } from "../../assets";
 import { TextStyles } from "../../utils/constants";
+import { useShowAnimation } from "../../utils/hooks";
 
 export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
+  const { animationRef, isShowAnimation } =
+    useShowAnimation<HTMLDivElement>(50);
+
   const onClockLogo = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -23,7 +27,12 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
           Welcome to Panda, The all in one App for Bars, Restaurants and Event
           Spaces
         </Text>
-        <Button onClick={showModalHandler} text="Join us" />
+        <div
+          ref={animationRef}
+          className={`button_wrapper ${isShowAnimation && "animation"}`}
+        >
+          <Button onClick={showModalHandler} text="Join us" />
+        </div>
       </div>
       <img src={IMAGES.HEADER_PHONE} alt="" className="head-phone" />
     </div>

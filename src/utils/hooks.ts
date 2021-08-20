@@ -1,12 +1,17 @@
 import { RefObject, useEffect, useRef, useState } from "react";
 
-export const useShowAnimation = <T extends HTMLElement>() => {
+export const useShowAnimation = <T extends HTMLElement>(
+  distance: number = 250
+) => {
   const [isShowAnimation, setIsShowAnimation] = useState<boolean>(false);
   const animationRef = useRef<T>(null);
 
   useEffect(() => {
     const playAnimation = (ref: RefObject<T>) => {
-      if (ref.current && window.pageYOffset + 250 >= ref.current.offsetTop) {
+      if (
+        ref.current &&
+        window.pageYOffset + distance >= ref.current.offsetTop
+      ) {
         setIsShowAnimation(true);
       }
     };
