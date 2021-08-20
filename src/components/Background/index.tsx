@@ -16,5 +16,8 @@ export const Background: FC<IBackgroundProps> = ({ children }) => (
     <img src={IMAGES.LEAF} alt="" className="leaf6" />
     <img src={IMAGES.LEAF} alt="" className="leaf7" />
     <img src={IMAGES.BAMBOO} alt="" className="bamboo2" />
+    <img src={IMAGES.LEAF_SEC} alt="" className="leaf8" />
+    <img src={IMAGES.LEAF} alt="" className="leaf9" />
+    <img src={IMAGES.BAMBOO} alt="" className="bamboo3" />
   </div>
 );

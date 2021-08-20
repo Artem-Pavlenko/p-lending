@@ -61,9 +61,18 @@
       right: -500px;
     }
 
-    .leaf8 {
-      width: 805px;
-      height: 1000px;
+    &.leaf8 {
+      width: 624px;
+      height: 624px;
+      top: 3820px;
+      left: 320px;
+    }
+
+    &.leaf9 {
+      width: 430px;
+      top: 3650px;
+      right: -260px;
+      transform: rotate(90deg);
     }
 
     &.bamboo1 {
@@ -83,8 +92,8 @@
     &.bamboo3 {
       width: 841px;
       height: 841px;
-      top: 2580px;
-      left: -190px;
+      top: 5250px;
+      right: -290px;
     }
   }
 }
