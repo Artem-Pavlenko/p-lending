@@ -126,7 +126,7 @@ export const Menu: FC<IMenuProps> = () => {
           }}
           arrowStyle={{
             position: "absolute",
-            top: "-237px",
+            top: "-166px",
             left: "197px",
             width: "120px",
             height: "120px",
@@ -157,11 +157,11 @@ export const Menu: FC<IMenuProps> = () => {
         <HiddenWrapper
           setHover={setIsHoverItem}
           style={{
-            bottom: "80px",
-            right: "145px",
-            width: "45px",
-            height: "45px",
-            borderRadius: "35px",
+            bottom: "88px",
+            right: "115px",
+            width: "410px",
+            height: "130px",
+            borderRadius: "10px",
           }}
         />
       </div>

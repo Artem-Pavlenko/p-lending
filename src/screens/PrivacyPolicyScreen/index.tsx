@@ -2,11 +2,14 @@ import { FC } from "react";
 
 import IPrivacyPolicyScreenProps from "./props";
 import "./styles.scss";
-import { ArticleHeading, Text } from "../../components";
-import { TextStyles } from "../../utils/constants";
 import { IMAGES } from "../../assets";
+import { ArticleHeading, Text } from "../../components";
+import { useScrollToStart } from "../../utils/hooks";
+import { TextStyles } from "../../utils/constants";
 
 export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
+  useScrollToStart();
+
   return (
     <div className="article_wrapper">
       <img className="logo" src={IMAGES.LOGO} alt="" />

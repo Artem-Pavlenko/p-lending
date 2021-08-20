@@ -6,8 +6,11 @@ import "./styles.scss";
 import { IMAGES } from "../../assets";
 import { ArticleHeading, Text } from "../../components";
 import { TextStyles } from "../../utils/constants";
+import { useScrollToStart } from "../../utils/hooks";
 
 export const TermsConditionsScreen: FC<ITermsConditionsScreenProps> = () => {
+  useScrollToStart();
+
   return (
     <div className="article_wrapper">
       <img className="logo" src={IMAGES.LOGO} alt="" />

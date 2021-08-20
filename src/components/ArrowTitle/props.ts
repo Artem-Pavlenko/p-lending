@@ -1,13 +1,13 @@
 import { CSSProperties } from "react";
 
-export default interface IArrowTitileProps {
+export default interface IArrowTitleProps {
   text: string;
   img: string;
   arrowStyle?: CSSProperties;
   blockStyle?: CSSProperties;
   descriptionStyle?: CSSProperties;
   paddingText?: boolean;
-  alignAtem?: boolean;
+  alignItem?: boolean;
   description?: string;
   hover?: boolean;
 }

@@ -10,7 +10,10 @@ import { Routes } from "../../utils/constants";
 export const Footer: FC<IFooterProps> = ({ showModalHandler }) => (
   <footer className="footer">
     <div className="footer_nav">
-      <img src={IMAGES.LOGO_WHITE} alt="" />
+      <Link to={Routes.Home}>
+        <img src={IMAGES.LOGO_WHITE} alt="" />
+      </Link>
+
       <Link to={Routes.PrivacyPolicy} className="link">
         Privacy Policy
       </Link>

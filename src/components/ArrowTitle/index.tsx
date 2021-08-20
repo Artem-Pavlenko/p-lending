@@ -1,20 +1,20 @@
 import { FC } from "react";
 
-import IArrowTitileProps from "./props";
+import IArrowTitleProps from "./props";
 import "./styles.scss";
 
-export const ArrowTitle: FC<IArrowTitileProps> = ({
+export const ArrowTitle: FC<IArrowTitleProps> = ({
   text,
   img,
   arrowStyle,
   blockStyle,
   descriptionStyle,
   paddingText,
-  alignAtem,
+  alignItem,
   description,
   hover,
 }) => (
-  <div className={`arrow_wrapper ${alignAtem && "align"}`} style={blockStyle}>
+  <div className={`arrow_wrapper ${alignItem && "align"}`} style={blockStyle}>
     <span
       className={`text ${paddingText && "with_padding"}  ${hover && "hover"}`}
     >

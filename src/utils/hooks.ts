@@ -20,3 +20,9 @@ export const useShowAnimation = <T extends HTMLElement>() => {
 
   return { isShowAnimation, animationRef };
 };
+
+export const useScrollToStart = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+};

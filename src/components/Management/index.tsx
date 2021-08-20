@@ -18,7 +18,7 @@ export const Management: FC<IManagementProps> = () => {
             schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
         />
         <ArrowTitle
-          alignAtem
+          alignItem
           text="Restaurant bill"
           img={IMAGES.ARROW}
           arrowStyle={{
@@ -32,7 +32,7 @@ export const Management: FC<IManagementProps> = () => {
           blockStyle={{ marginBottom: "110px" }}
         />
         <ArrowTitle
-          alignAtem
+          alignItem
           text="Vouchers"
           img={IMAGES.ARROW_TOP}
           arrowStyle={{

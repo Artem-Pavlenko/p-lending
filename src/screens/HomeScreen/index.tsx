@@ -10,8 +10,11 @@ import {
   Management,
   PaymentOptions,
 } from "../../components";
+import { useScrollToStart } from "../../utils/hooks";
 
 export const HomeScreen: FC<IHomeScreenProps> = ({ showModalHandler }) => {
+  useScrollToStart();
+
   return (
     <>
       <Header showModalHandler={showModalHandler} />

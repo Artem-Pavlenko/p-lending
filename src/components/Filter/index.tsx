@@ -25,7 +25,7 @@ export const Filter: FC<IFilterProps> = () => {
           }}
         />
         <ArrowTitle
-          alignAtem
+          alignItem
           text="Menu item"
           img={IMAGES.ARROW_TOP}
           arrowStyle={{ position: "absolute", top: "-150px", right: "195px" }}
