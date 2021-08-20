@@ -19,6 +19,7 @@ function App() {
     <Router>
       <Background>
         <Modal showModal={showModal} onClose={onCloseModal} />
+
         <Switch>
           <Route exact path={Routes.Home}>
             <HomeScreen showModalHandler={onShowModal} />
@@ -30,6 +31,7 @@ function App() {
             <TermsConditionsScreen />
           </Route>
         </Switch>
+
         <Footer showModalHandler={onShowModal} />
       </Background>
     </Router>

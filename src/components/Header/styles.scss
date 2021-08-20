@@ -10,14 +10,8 @@
       left: 120px;
       width: 120px;
       height: 33px;
-    }
-
-    &.background-header {
-      top: -34px;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 734px;
+      position: fixed;
+      cursor: pointer;
     }
 
     &.head-phone {
@@ -27,6 +21,33 @@
       margin-top: 192px;
       margin-left: 92px;
     }
+  }
+
+  .background_header {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 734px;
+    background: linear-gradient(
+      180deg,
+      #b3e3c9 0%,
+      rgba(214, 214, 214, 0) 100%
+    );
+  }
+
+  .gradient_fixed {
+    position: fixed;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 104px;
+    background: linear-gradient(
+      180deg,
+      #b3e3c9 0%,
+      rgba(214, 214, 214, 0) 100%
+    );
   }
 
   .header-wrapper {
