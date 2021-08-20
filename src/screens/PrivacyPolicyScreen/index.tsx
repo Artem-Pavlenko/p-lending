@@ -5,14 +5,18 @@ import "./styles.scss";
 import { IMAGES } from "../../assets";
 import { ArticleHeading, Text } from "../../components";
 import { useScrollToStart } from "../../utils/hooks";
-import { TextStyles } from "../../utils/constants";
+import { Routes, TextStyles } from "../../utils/constants";
+import { Link } from "react-router-dom";
 
 export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
   useScrollToStart();
 
   return (
     <div className="article_wrapper">
-      <img className="logo" src={IMAGES.LOGO} alt="" />
+      <Link to={Routes.Home}>
+        <img className="logo" src={IMAGES.LOGO} alt="" />
+      </Link>
+
       <Text type={TextStyles.ArticleHeader}>Privacy Policy</Text>
       <Text type={TextStyles.ArticleText}>
         At Panda, accessible from www.panadamenus.com, one of our main

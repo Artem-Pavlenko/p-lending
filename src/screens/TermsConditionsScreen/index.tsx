@@ -5,7 +5,7 @@ import ITermsConditionsScreenProps from "./props";
 import "./styles.scss";
 import { IMAGES } from "../../assets";
 import { ArticleHeading, Text } from "../../components";
-import { TextStyles } from "../../utils/constants";
+import { Routes, TextStyles } from "../../utils/constants";
 import { useScrollToStart } from "../../utils/hooks";
 
 export const TermsConditionsScreen: FC<ITermsConditionsScreenProps> = () => {
@@ -13,7 +13,10 @@ export const TermsConditionsScreen: FC<ITermsConditionsScreenProps> = () => {
 
   return (
     <div className="article_wrapper">
-      <img className="logo" src={IMAGES.LOGO} alt="" />
+      <Link to={Routes.Home}>
+        <img className="logo" src={IMAGES.LOGO} alt="" />
+      </Link>
+
       <Text type={TextStyles.ArticleHeader}>Terms&Conditions</Text>
       <Text type={TextStyles.ArticleText}>Welcome to Panda!</Text>
       <Text type={TextStyles.ArticleText}>
