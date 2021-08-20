@@ -19,6 +19,7 @@ export * from "./Header";
 export * from "./HiddenWrapper";
 export * from "./Management";
 export * from "./Menu";
+export * from "./Modal";
 export * from "./Orders";
 export * from "./PaymentOptions";
 export * from "./PaymentTypeItem";

@@ -6,7 +6,7 @@ import { Button, Text } from "..";
 import { IMAGES } from "../../assets";
 import { TextStyles } from "../../utils/constants";
 
-export const Header: FC<IHeaderProps> = () => (
+export const Header: FC<IHeaderProps> = ({ showModalHandler }) => (
   <div className="header">
     <img src={IMAGES.HEAD} alt="" className="background-header" />
     <img src={IMAGES.LOGO} alt="" className="logo" />
@@ -15,7 +15,7 @@ export const Header: FC<IHeaderProps> = () => (
         Welcome to Panda, The all in one App for Bars, Restaurants and Event
         Spaces
       </Text>
-      <Button text="Join us" />
+      <Button onClick={showModalHandler} text="Join us" />
     </div>
     <img src={IMAGES.HEADER_PHONE} alt="" className="head-phone" />
   </div>

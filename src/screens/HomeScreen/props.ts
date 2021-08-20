@@ -1,1 +1,3 @@
-export default interface IHomeScreenProps {}
+export default interface IHomeScreenProps {
+  showModalHandler: () => void;
+}

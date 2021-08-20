@@ -11,14 +11,16 @@ import {
   PaymentOptions,
 } from "../../components";
 
-export const HomeScreen: FC<IHomeScreenProps> = () => (
-  <>
-    <Header />
-    <Category />
-    <FilterBlock />
-    <Management />
-    <PaymentOptions />
-    <AdminPanel />
-    <FAQ />
-  </>
-);
+export const HomeScreen: FC<IHomeScreenProps> = ({ showModalHandler }) => {
+  return (
+    <>
+      <Header showModalHandler={showModalHandler} />
+      <Category />
+      <FilterBlock />
+      <Management />
+      <PaymentOptions />
+      <AdminPanel />
+      <FAQ />
+    </>
+  );
+};

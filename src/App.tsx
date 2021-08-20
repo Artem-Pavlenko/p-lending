@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Background, Footer } from "./components";
+import { Background, Footer, Modal } from "./components";
 import {
   HomeScreen,
   PrivacyPolicyScreen,
@@ -10,12 +10,18 @@ import {
 import { Routes } from "./utils/constants";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const onShowModal = () => setShowModal(true);
+  const onCloseModal = () => setShowModal(false);
+
   return (
     <Router>
       <Background>
+        <Modal showModal={showModal} onClose={onCloseModal} />
         <Switch>
           <Route exact path={Routes.Home}>
-            <HomeScreen />
+            <HomeScreen showModalHandler={onShowModal} />
           </Route>
           <Route exact path={Routes.PrivacyPolicy}>
             <PrivacyPolicyScreen />
@@ -24,7 +30,7 @@ function App() {
             <TermsConditionsScreen />
           </Route>
         </Switch>
-        <Footer />
+        <Footer showModalHandler={onShowModal} />
       </Background>
     </Router>
   );

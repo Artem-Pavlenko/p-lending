@@ -1,1 +1,3 @@
-export default interface IFooterProps {}
+export default interface IFooterProps {
+  showModalHandler: () => void;
+}

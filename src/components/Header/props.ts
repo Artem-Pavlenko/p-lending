@@ -1,1 +1,3 @@
-export default interface IHeaderProps {}
+export default interface IHeaderProps {
+  showModalHandler: () => void;
+}
