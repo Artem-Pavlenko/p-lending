@@ -6,7 +6,7 @@ export const useShowAnimation = <T extends HTMLElement>() => {
 
   useEffect(() => {
     const playAnimation = (ref: RefObject<T>) => {
-      if (ref.current && window.pageYOffset >= ref.current.offsetTop) {
+      if (ref.current && window.pageYOffset + 250 >= ref.current.offsetTop) {
         setIsShowAnimation(true);
       }
     };

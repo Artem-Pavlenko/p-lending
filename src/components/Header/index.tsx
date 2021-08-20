@@ -11,7 +11,7 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => (
     <img src={IMAGES.HEAD} alt="" className="background-header" />
     <img src={IMAGES.LOGO} alt="" className="logo" />
     <div className="header-wrapper">
-      <Text type={TextStyles.Header}>
+      <Text type={TextStyles.Header} width={770}>
         Welcome to Panda, The all in one App for Bars, Restaurants and Event
         Spaces
       </Text>

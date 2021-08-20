@@ -9,7 +9,7 @@ export const AnimationCategory: FC<IAnimationCategoryProps> = () => {
   const { isShowAnimation, animationRef } = useShowAnimation<HTMLDivElement>();
 
   return (
-    <div ref={animationRef} className="categoty_animation_wrapp">
+    <div ref={animationRef} className="category_animation_wrapp">
       <img src={IMAGES.CATEGORY_PHONE} alt="" />
       <img
         src={IMAGES.A_TAB_BAR}
