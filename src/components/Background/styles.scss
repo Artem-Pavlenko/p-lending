@@ -1,3 +1,5 @@
+@import "../../utils/variables.scss";
+
 .background {
   position: relative;
   width: 100vw;
@@ -16,6 +18,10 @@
       width: 461px;
       height: 461px;
       opacity: 0.5;
+
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf2 {
@@ -24,6 +30,12 @@
       right: -70px;
       top: -90px;
       transform: rotate(90deg);
+
+      @media screen and (max-width: $heading + px) {
+        transform: rotate(0deg);
+        top: 70px;
+        left: -135px;
+      }
     }
 
     &.leaf3 {
@@ -31,6 +43,9 @@
       height: 388px;
       top: 687px;
       left: -100px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf4 {
@@ -38,6 +53,9 @@
       height: 581px;
       top: 460px;
       right: -150px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf5 {
@@ -45,6 +63,9 @@
       height: 624px;
       top: 1127px;
       left: 218px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf6 {
@@ -52,6 +73,9 @@
       height: 390px;
       top: 1887px;
       left: 180px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf7 {
@@ -59,6 +83,9 @@
       height: 780px;
       top: 2450px;
       right: -500px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf8 {
@@ -66,6 +93,9 @@
       height: 624px;
       top: 3820px;
       left: 320px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.leaf9 {
@@ -73,6 +103,9 @@
       top: 3650px;
       right: -260px;
       transform: rotate(90deg);
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.bamboo1 {
@@ -80,6 +113,9 @@
       height: 610px;
       top: 1450px;
       right: -290px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.bamboo2 {
@@ -87,6 +123,9 @@
       height: 841px;
       top: 2580px;
       left: -190px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
 
     &.bamboo3 {
@@ -94,6 +133,9 @@
       height: 841px;
       top: 5250px;
       right: -290px;
+      @media screen and (max-width: $heading + px) {
+        display: none;
+      }
     }
   }
 }

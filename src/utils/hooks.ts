@@ -1,6 +1,7 @@
 import { RefObject, useEffect, useRef, useState } from "react";
+import { DIMENSIONS, DimensionTypes } from "./constants";
 
-import { IAnimation } from "./types";
+import { IAnimation, ISize } from "./types";
 
 export const useShowAnimation = <T extends HTMLElement>(
   distance: number = 250
@@ -54,3 +55,27 @@ export function useOutsideListener<T extends HTMLElement>(
 
   return refWrapper;
 }
+
+export const useIsSmallerDimension = (mediaValue: DimensionTypes) => {
+  const { width }: ISize = useWindowSize();
+  return !!width && width < DIMENSIONS[mediaValue];
+};
+
+export const useWindowSize = (): ISize => {
+  const [windowSize, setWindowSize] = useState<ISize>({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowSize;
+};

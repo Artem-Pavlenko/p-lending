@@ -1,6 +1,10 @@
+@import "../../utils/variables.scss";
+
 .header {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
   img {
     position: absolute;
     object-fit: cover;
@@ -13,6 +17,14 @@
       width: 120px;
       height: 33px;
       cursor: pointer;
+
+      @media screen and (max-width: $heading + px) {
+        position: absolute;
+        top: 24px;
+        left: 16px;
+        width: 80px;
+        height: 22px;
+      }
     }
 
     &.head-phone {
@@ -21,6 +33,26 @@
       height: 553px;
       margin-top: 192px;
       margin-left: 92px;
+
+      @media screen and (max-width: $heading + px) {
+        position: absolute;
+        top: 183px;
+        right: -139px;
+        z-index: -1;
+        margin-left: 0;
+        opacity: 0.6;
+        width: 290px;
+        height: auto;
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 1442px) {
+        margin-top: 0;
+        margin-left: 30%;
+      }
+
+      @media screen and (max-width: 905px) {
+      }
     }
   }
 
@@ -36,6 +68,10 @@
       #b3e3c9 0%,
       rgba(214, 214, 214, 0) 100%
     );
+
+    @media screen and (max-width: $heading + px) {
+      background: none;
+    }
   }
 
   .gradient_fixed {
@@ -49,16 +85,30 @@
       #b3e3c9 0%,
       rgba(214, 214, 214, 0) 100%
     );
+
+    @media screen and (max-width: $heading + px) {
+      background: none;
+    }
   }
 
   .header-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 192px 0 0 120px;
+    flex-wrap: wrap;
+    padding: 192px 120px 0;
+
+    @media screen and (max-width: 905px) {
+      padding: 73px 16px 0;
+    }
 
     .button_wrapper {
       top: 30px;
       right: calc(90% - 450px);
+
+      @media screen and (max-width: $heading + px) {
+        display: flex;
+        justify-content: center;
+      }
 
       &.animation {
         transition: all 1s ease-in-out;

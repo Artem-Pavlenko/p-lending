@@ -1,14 +1,35 @@
 @import "../../utils/variables.scss";
 
 span {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+
+  @media screen and (max-width: $heading + px) {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  @media screen and (max-width: 290px) {
+    max-width: 280px !important;
+  }
+
   &.main-text {
-    width: 558px;
+    max-width: 558px;
     font-style: normal;
     font-weight: bold;
     font-size: 54px;
     line-height: 79px;
     color: $killarney;
     margin-bottom: 160px;
+  }
+
+  &.adaptive-main-text {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 200px;
+    font-style: normal;
+    color: $killarney;
+    font-weight: bold;
   }
 
   &.article-header {
