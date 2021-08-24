@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from "react";
 
 import IModalProps from "./props";
 import "./styles.scss";
-import { Input, Text, Button } from "..";
+import { Input, Text, Button, DropDownList } from "..";
 import { IMAGES } from "../../assets";
 import { TextStyles } from "../../utils/constants";
 
@@ -12,6 +12,10 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [address, setAddress] = useState("");
   const [website, setWebsite] = useState("");
   const [name, setName] = useState("");
+  const [checkedVenue, setCheckedVenue] = useState("");
+  const [checkedSort, setCheckedSort] = useState("");
+
+  const list1 = ["Type", "Type2", "Type3"];
 
   useEffect(() => {
     if (showModal) {
@@ -67,6 +71,18 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
               onChange={setWebsite}
               title="Website"
               placeholder="Website"
+            />
+            <DropDownList
+              title="Type of venue "
+              list={list1}
+              checked={checkedVenue}
+              setChecked={setCheckedVenue}
+            />
+            <DropDownList
+              title="What sort of POS do you have ?"
+              list={list1}
+              checked={checkedSort}
+              setChecked={setCheckedSort}
             />
           </div>
           <Button className="center" text="Join us" onClick={() => {}} />

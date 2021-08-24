@@ -33,3 +33,24 @@ export const useScrollToStart = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 };
+
+export function useOutsideListener<T extends HTMLElement>(
+  callback: () => void
+): RefObject<T> {
+  const refWrapper = useRef<T>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: any) {
+      if (refWrapper?.current && !refWrapper?.current?.contains(event.target)) {
+        callback();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [refWrapper, callback]);
+
+  return refWrapper;
+}

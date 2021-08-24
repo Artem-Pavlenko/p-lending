@@ -27,7 +27,6 @@
 
   .modal_content {
     position: relative;
-    // min-width: 440px;
     max-width: 740px;
     min-height: 600px;
     padding: 40px 50px;
@@ -73,6 +72,7 @@
         justify-content: space-between;
         margin: 10px 0 60px;
         padding-top: 30px;
+        padding-bottom: 33px;
         border-top: 2px solid $gallery;
       }
     }

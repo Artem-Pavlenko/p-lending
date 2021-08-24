@@ -14,6 +14,7 @@ import STAFF from "./images/staff.svg";
 import ELLIPSE_1 from "./images/ellipse_1.svg";
 import ELLIPSE_2 from "./images/ellipse_2.svg";
 import PANDA from "./images/panda.svg";
+import DROP_DOWN_LIST from "./images/drop_down_list.svg";
 // arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
@@ -69,6 +70,7 @@ export const IMAGES = {
   LOGO,
   LOGO_WHITE,
   PANDA,
+  DROP_DOWN_LIST,
   ARROW,
   ARROW2,
   ARROW_TOP,

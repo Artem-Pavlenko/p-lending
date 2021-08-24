@@ -11,6 +11,7 @@ export * from "./Background";
 export * from "./Button";
 export * from "./Category";
 export * from "./DescriptionsPayment";
+export * from "./DropDownList";
 export * from "./FAQ";
 export * from "./Filter";
 export * from "./FilterBlock";
