@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import IAnimationPaymentProps from "./props";
 import "./styles.scss";
-import { ArrowTitle, AnimationEqualyy, AnimationManually } from "..";
+import { ArrowTitle, AnimationEqually, AnimationManually } from "..";
 import { IMAGES } from "../../assets";
 
 export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
@@ -11,7 +11,7 @@ export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
   return (
     <div className="payment_types">
       <div className="phone_wrapper">
-        <AnimationEqualyy isShowAnimation={isShowAnimation} />
+        <AnimationEqually isShowAnimation={isShowAnimation} />
         <ArrowTitle
           text="Equally"
           img={IMAGES.ARROW_LEFT}

@@ -14,9 +14,11 @@ export enum Routes {
 }
 
 export enum DimensionTypes {
-  Heading = "HEADING",
+  Heading = "TABLET",
+  Button = "BUTTON",
 }
 
 export const DIMENSIONS: Record<DimensionTypes, number> = {
-  HEADING: 914,
+  TABLET: 1026,
+  BUTTON: 1250,
 };

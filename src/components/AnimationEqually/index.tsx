@@ -5,7 +5,7 @@ import "./styles.scss";
 import { PaymentTypeItem } from "..";
 import { IMAGES } from "../../assets";
 
-export const AnimationEqualyy: FC<IAnimationEquallyProps> = ({
+export const AnimationEqually: FC<IAnimationEquallyProps> = ({
   isShowAnimation,
 }) => (
   <div className="equally_animation">

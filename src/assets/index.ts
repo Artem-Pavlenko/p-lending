@@ -15,6 +15,7 @@ import ELLIPSE_1 from "./images/ellipse_1.svg";
 import ELLIPSE_2 from "./images/ellipse_2.svg";
 import PANDA from "./images/panda.svg";
 import DROP_DOWN_LIST from "./images/drop_down_list.svg";
+import CATEGORY from "./images/mob_category.svg";
 // arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
@@ -38,7 +39,6 @@ import ARROW_GENERAL from "./images/arrow_general.svg";
 import ARROW_ADD_STAFF from "./images/arrow_add_staff.svg";
 import ARROW_WAITERS from "./images/arrow_waiters_1.svg";
 import ARROW_WAITERS_2 from "./images/arrow_waiters_2.svg";
-
 // phone images
 import HEADER_PHONE from "./images/phone_header.png";
 import CATEGORY_PHONE from "./images/phone_category.png";
@@ -70,6 +70,7 @@ export const IMAGES = {
   LOGO,
   LOGO_WHITE,
   PANDA,
+  CATEGORY,
   DROP_DOWN_LIST,
   ARROW,
   ARROW2,

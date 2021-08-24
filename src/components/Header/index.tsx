@@ -9,6 +9,8 @@ import { useIsSmallerDimension, useShowAnimation } from "../../utils/hooks";
 
 export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Heading);
+  const withAnimation = useIsSmallerDimension(DimensionTypes.Button);
+
   const { animationRef, isShowAnimation } =
     useShowAnimation<HTMLDivElement>(50);
 
@@ -36,7 +38,7 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
         <div
           ref={animationRef}
           className={`button_wrapper ${
-            !isSmallDimension && isShowAnimation && "animation"
+            !withAnimation && isShowAnimation && "animation"
           }`}
         >
           <Button onClick={showModalHandler} text="Join us" />

@@ -1,16 +1,57 @@
+@import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
+
 .category {
   display: flex;
   margin-top: 260px;
   margin-left: 53px;
 
+  @media screen and (max-width: $mobile + px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    padding: 0 16px;
+  }
+
   .wrapp {
+    width: 100%;
     display: flex;
     margin-right: 120px;
+
+    @media screen and (max-width: $heading + px) {
+      margin-right: 0;
+      flex-direction: column;
+    }
+
+    .description {
+      font-family: Indie Flower;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 24px;
+      margin-bottom: 16px;
+      margin-top: 44px;
+
+      @media screen and (max-width: $tablet + px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .mobile_category_img {
+    display: none;
+
+    @media screen and (max-width: $heading + px) {
+      display: block;
+      width: 100%;
+    }
   }
 
   .tab_bar_items {
     display: flex;
     margin-top: 240px;
+    @include mobileView();
 
     > img {
       margin-right: 90px;

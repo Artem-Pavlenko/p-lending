@@ -1,6 +1,8 @@
 @import "../../utils/variables.scss";
+@import "../../utils/mixins.scss";
 
 .arrow_wrapper {
+  @include mobileView();
   min-height: 30px;
   position: relative;
   display: flex;
