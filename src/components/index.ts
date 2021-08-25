@@ -21,6 +21,7 @@ export * from "./HiddenWrapper";
 export * from "./Input";
 export * from "./Management";
 export * from "./Menu";
+export * from "./MobileFilter";
 export * from "./Modal";
 export * from "./Orders";
 export * from "./PaymentOptions";

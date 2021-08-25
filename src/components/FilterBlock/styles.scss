@@ -1,13 +1,33 @@
+@import "../../utils/variables.scss";
+
 .filter-block {
   padding-left: 120px;
   margin-top: 280px;
   display: flex;
+
+  @media screen and (max-width: $heading + px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 80px;
+  }
 
   .description-block {
     display: flex;
 
     .tab_bar_animation {
       margin-right: 20px;
+
+      @media screen and (max-width: $heading + px) {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+      }
     }
+  }
+
+  .red_text {
+    color: red;
   }
 }

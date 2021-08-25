@@ -9,18 +9,26 @@ import { useIsSmallerDimension } from "../../utils/hooks";
 import { DimensionTypes } from "../../utils/constants";
 
 export const Category: FC<ICategoryProps> = () => {
-  const isSmallScreen = useIsSmallerDimension(DimensionTypes.Tablet);
+  const isSmallScreen = useIsSmallerDimension(DimensionTypes.Category);
+
+  console.log(isSmallScreen);
 
   return (
     <div className="category">
       <div className="wrapp">
-        <ArrowTitle text="This is category" img={IMAGES.ARROW_RIGHT} />
+        {!isSmallScreen && (
+          <ArrowTitle text="This is category" img={IMAGES.ARROW_RIGHT} />
+        )}
         {isSmallScreen ? (
           <>
-            <img className="mobile_category_img" src={IMAGES.CATEGORY} alt="" />
-            <span className="description">1 - This is category </span>
-            <span className="description">2 - Card of the restaurant</span>
-            <span className="description">3 - Tab bar</span>
+            <img
+              className="mobile_phone_img"
+              src={IMAGES.MOB_CATEGORY}
+              alt=""
+            />
+            <span className="description_text">1 - This is category </span>
+            <span className="description_text">2 - Card of the restaurant</span>
+            <span className="description_text">3 - Tab bar</span>
           </>
         ) : (
           <AnimationCategory />
@@ -34,21 +42,25 @@ export const Category: FC<ICategoryProps> = () => {
          dhvokecowjcf akichjk"
           marginBottom={isSmallScreen ? 40 : 130}
         />
-        <ArrowTitle
-          paddingText
-          text="Card of the restaurant"
-          img={IMAGES.ARROW_LEFT}
-          arrowStyle={{ position: "absolute", left: "120px", top: "-25px" }}
-        />
-        <div className="tab_bar_items">
-          <img src={IMAGES.ARROW} alt="" />
-          {tabBar.map(({ img, name }) => (
-            <div key={name} className="item">
-              <img src={img} alt="" />
-              <span className="item_name">{name}</span>
-            </div>
-          ))}
-        </div>
+        {!isSmallScreen && (
+          <ArrowTitle
+            paddingText
+            text="Card of the restaurant"
+            img={IMAGES.ARROW_LEFT}
+            arrowStyle={{ position: "absolute", left: "120px", top: "-25px" }}
+          />
+        )}
+        {!isSmallScreen && (
+          <div className="tab_bar_items">
+            <img src={IMAGES.ARROW} alt="" />
+            {tabBar.map(({ img, name }) => (
+              <div key={name} className="item">
+                <img src={img} alt="" />
+                <span className="item_name">{name}</span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

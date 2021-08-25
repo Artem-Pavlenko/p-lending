@@ -15,7 +15,11 @@ import ELLIPSE_1 from "./images/ellipse_1.svg";
 import ELLIPSE_2 from "./images/ellipse_2.svg";
 import PANDA from "./images/panda.svg";
 import DROP_DOWN_LIST from "./images/drop_down_list.svg";
-import CATEGORY from "./images/mob_category.svg";
+// for mobile view
+import MOB_CATEGORY from "./images/mob_category.svg";
+import MOB_MENU from "./images/mob_menu.svg";
+import MOB_ORDER from "./images/mob_order.svg";
+import MOB_TABLE from "./images/mob_table.svg";
 // arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
@@ -70,7 +74,10 @@ export const IMAGES = {
   LOGO,
   LOGO_WHITE,
   PANDA,
-  CATEGORY,
+  MOB_CATEGORY,
+  MOB_MENU,
+  MOB_ORDER,
+  MOB_TABLE,
   DROP_DOWN_LIST,
   ARROW,
   ARROW2,

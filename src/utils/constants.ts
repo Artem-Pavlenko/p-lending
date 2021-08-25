@@ -17,10 +17,14 @@ export enum DimensionTypes {
   Heading = "HEADING",
   Button = "BUTTON",
   Tablet = "TABLET",
+  Category = "CATEGORY",
+  Filter = "FILTER",
 }
 
 export const DIMENSIONS: Record<DimensionTypes, number> = {
   HEADING: 1026,
   BUTTON: 1250,
   TABLET: 770,
+  CATEGORY: 1542,
+  FILTER: 1315,
 };
