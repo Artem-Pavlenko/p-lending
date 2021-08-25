@@ -1,6 +1,12 @@
+@import "../../utils/variables.scss";
+
 .admin_panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 219px;
+
+  @media screen and (max-width: $order + px) {
+    margin-top: 80px;
+  }
 }

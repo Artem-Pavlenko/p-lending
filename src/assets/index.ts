@@ -20,6 +20,19 @@ import MOB_CATEGORY from "./images/mob_category.svg";
 import MOB_MENU from "./images/mob_menu.svg";
 import MOB_ORDER from "./images/mob_order.svg";
 import MOB_TABLE from "./images/mob_table.svg";
+import MOB_ORDERS_FILTER from "./images/mob_orders_1.svg";
+import MOB_ORDER_ITEM from "./images/mob_orders_2.svg";
+import MOB_ORDER_DESCRIPTION from "./images/mob_orders_3.svg";
+import MOB_MENU_1 from "./images/mob_menu_1.svg";
+import MOB_MENU_2 from "./images/mob_menu_2.svg";
+import MOB_MENU_3 from "./images/mob_menu_3.png";
+import MOB_MENU_4 from "./images/mob_menu_4.svg";
+import MOB_MENU_5 from "./images/mob_menu_5.svg";
+import MOB_ARROW_SOLD from "./images/mob_arrow_sold.png";
+import MOB_ARROW_DISCOUNT from "./images/mob_arrow_discount.svg";
+import MOB_ARROW_CATEGORY from "./images/mob_arrow_category.png";
+import MOB_ARROW_ITEM from "./images/mob_arrow_item.png";
+import MOB_ARROW_ITEM2 from "./images/mob_arrow_item.svg";
 // arrows
 import ARROW from "./images/arrow.svg";
 import ARROW2 from "./images/arrow2.svg";
@@ -78,6 +91,19 @@ export const IMAGES = {
   MOB_MENU,
   MOB_ORDER,
   MOB_TABLE,
+  MOB_ORDERS_FILTER,
+  MOB_ORDER_ITEM,
+  MOB_ORDER_DESCRIPTION,
+  MOB_MENU_1,
+  MOB_MENU_2,
+  MOB_MENU_3,
+  MOB_MENU_4,
+  MOB_MENU_5,
+  MOB_ARROW_SOLD,
+  MOB_ARROW_DISCOUNT,
+  MOB_ARROW_CATEGORY,
+  MOB_ARROW_ITEM,
+  MOB_ARROW_ITEM2,
   DROP_DOWN_LIST,
   ARROW,
   ARROW2,

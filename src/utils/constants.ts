@@ -21,6 +21,7 @@ export enum DimensionTypes {
   Filter = "FILTER",
   Management = "MANAGEMENT",
   Payment = "PAYMENT",
+  Order = "ORDER",
 }
 
 export const DIMENSIONS: Record<DimensionTypes, number> = {
@@ -31,4 +32,5 @@ export const DIMENSIONS: Record<DimensionTypes, number> = {
   FILTER: 1315,
   MANAGEMENT: 1015,
   PAYMENT: 1156,
+  ORDER: 1330,
 };

@@ -4,6 +4,8 @@ import IMenuProps from "./props";
 import "./styles.scss";
 import { ArrowTitle, HiddenWrapper } from "..";
 import { IMAGES } from "../../assets";
+import { useIsSmallerDimension } from "../../utils/hooks";
+import { DimensionTypes } from "../../utils/constants";
 
 export const Menu: FC<IMenuProps> = () => {
   const [isHoverMain, setIsHoverMain] = useState(false);
@@ -12,159 +14,226 @@ export const Menu: FC<IMenuProps> = () => {
   const [isHoverDiscount, setIsHoverDiscount] = useState(false);
   const [isHoverItem, setIsHoverItem] = useState(false);
 
+  const isSmallDimension = useIsSmallerDimension(DimensionTypes.Order);
+
   return (
-    <div className="admin_panel_block">
+    <div className="admin_panel_block menu_block">
       <img src={IMAGES.MENU} alt="2.Menu" className="img" />
-      <div className="screen_wrapper">
-        <ArrowTitle
-          text="Main restaurant photo"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing "
-          img={IMAGES.ARROW_MAIN}
-          hover={isHoverMain}
-          blockStyle={{
-            position: "absolute",
-            top: "-170px",
-            left: "300px",
-          }}
-          arrowStyle={{
-            position: "absolute",
-            top: "95px",
-            left: "339px",
-            width: "210px",
-            height: "210px",
-          }}
-        />
 
-        <ArrowTitle
-          text="Sold out"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing "
-          img={IMAGES.ARROW_SOLD}
-          hover={isHoverSold}
-          blockStyle={{
-            position: "absolute",
-            top: "-170px",
-            right: "206px",
-          }}
-          arrowStyle={{
-            position: "absolute",
-            top: "121px",
-            left: "60px",
-            width: "400px",
-            height: "400px",
-          }}
-        />
+      {isSmallDimension ? (
+        <div className="menu_wrapper">
+          <img src={IMAGES.MOB_MENU_1} alt="" className="menu_1" />
 
-        {/* that when you hover the mouse over the area, the text is highlighted in <ArrowTitle/> */}
-        <HiddenWrapper
-          setHover={setIsHoverMain}
-          style={{
-            top: "155px",
-            left: "376px",
-            width: "825px",
-            height: "160px",
-            borderRadius: "15px",
-          }}
-        />
-        <HiddenWrapper
-          setHover={setIsHoverSold}
-          style={{
-            top: "340px",
-            right: "115px",
-            width: "405px",
-            height: "110px",
-            borderRadius: "10px",
-          }}
-        />
+          {/* sold out block */}
+          <p>Sold out</p>
+          <span className="menu_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </span>
+          <div className="img_wrapper">
+            <img src={IMAGES.MOB_ARROW_SOLD} alt="" className="sold_arrow" />
+            <div className="yellow_ellipse" />
+            <img src={IMAGES.MOB_MENU_2} alt="" className="main_img" />
+          </div>
 
-        <img src={IMAGES.MENU_SCREEN} alt="" />
+          {/* discount block */}
+          <div className="img_wrapper">
+            <img src={IMAGES.MOB_MENU_3} alt="" className="main_img sale" />
+            <img
+              src={IMAGES.MOB_ARROW_DISCOUNT}
+              alt=""
+              className="discount_arrow"
+            />
+            <div className="yellow_ellipse sale" />
+          </div>
+          <p>Discount</p>
+          <span className="menu_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </span>
 
-        <ArrowTitle
-          text="Menu category"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
-          img={IMAGES.ARROW_MENU}
-          hover={isHoverMenu}
-          blockStyle={{
-            position: "absolute",
-            bottom: "-150px",
-            left: "40px",
-          }}
-          arrowStyle={{
-            position: "absolute",
-            top: "-188px",
-            left: "209px",
-            width: "185px",
-            height: "185px",
-          }}
-        />
-        <ArrowTitle
-          text="Discount"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
-          img={IMAGES.ARROW_DISCOUNT}
-          hover={isHoverDiscount}
-          blockStyle={{
-            position: "absolute",
-            bottom: "-150px",
-            left: "400px",
-          }}
-          arrowStyle={{
-            position: "absolute",
-            top: "-371px",
-            left: "97px",
-            width: "330px",
-            height: "330px",
-          }}
-        />
-        <ArrowTitle
-          text="Menu item"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing "
-          img={IMAGES.ARROW_MENU_ITEM}
-          hover={isHoverItem}
-          blockStyle={{
-            position: "absolute",
-            bottom: "-150px",
-            right: "220px",
-          }}
-          arrowStyle={{
-            position: "absolute",
-            top: "-166px",
-            left: "197px",
-            width: "120px",
-            height: "120px",
-          }}
-        />
+          {/* menu category block */}
+          <div className="img_wrapper discount">
+            <img src={IMAGES.MOB_MENU_4} alt="" className="main_img category" />
 
-        {/* that when you hover the mouse over the area, the text is highlighted in <ArrowTitle/> */}
-        <HiddenWrapper
-          setHover={setIsHoverMenu}
-          style={{
-            bottom: "110px",
-            left: "310px",
-            width: "45px",
-            height: "45px",
-            borderRadius: "35px",
-          }}
-        />
-        <HiddenWrapper
-          setHover={setIsHoverDiscount}
-          style={{
-            bottom: "255px",
-            left: "697px",
-            width: "45px",
-            height: "45px",
-            borderRadius: "35px",
-          }}
-        />
-        <HiddenWrapper
-          setHover={setIsHoverItem}
-          style={{
-            bottom: "88px",
-            right: "115px",
-            width: "410px",
-            height: "130px",
-            borderRadius: "10px",
-          }}
-        />
-      </div>
+            <div className="yellow_ellipse tab_bar" />
+
+            <img
+              src={IMAGES.MOB_ARROW_CATEGORY}
+              alt=""
+              className="category_arrow"
+            />
+          </div>
+          <p className="menu_category_title">Menu category</p>
+          <span className="menu_description menu_category_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </span>
+
+          {/* menu item block */}
+          <div className="img_wrapper discount">
+            <img src={IMAGES.MOB_MENU_5} alt="" className="main_img menu_tem" />
+
+            <div className="yellow_ellipse menu_item" />
+
+            <img src={IMAGES.MOB_ARROW_ITEM2} alt="" className="item_arrow" />
+          </div>
+          <p>Menu item</p>
+          <span className="menu_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </span>
+        </div>
+      ) : (
+        <>
+          <div className="screen_wrapper">
+            <ArrowTitle
+              text="Main restaurant photo"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              img={IMAGES.ARROW_MAIN}
+              hover={isHoverMain}
+              blockStyle={{
+                position: "absolute",
+                top: "-170px",
+                left: "300px",
+              }}
+              arrowStyle={{
+                position: "absolute",
+                top: "95px",
+                left: "339px",
+                width: "210px",
+                height: "210px",
+              }}
+            />
+
+            <ArrowTitle
+              text="Sold out"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              img={IMAGES.ARROW_SOLD}
+              hover={isHoverSold}
+              blockStyle={{
+                position: "absolute",
+                top: "-170px",
+                right: "206px",
+              }}
+              arrowStyle={{
+                position: "absolute",
+                top: "121px",
+                left: "60px",
+                width: "400px",
+                height: "400px",
+              }}
+            />
+
+            {/* that when you hover the mouse over the area, the text is highlighted in <ArrowTitle/> */}
+            <HiddenWrapper
+              setHover={setIsHoverMain}
+              style={{
+                top: "155px",
+                left: "376px",
+                width: "825px",
+                height: "160px",
+                borderRadius: "15px",
+              }}
+            />
+            <HiddenWrapper
+              setHover={setIsHoverSold}
+              style={{
+                top: "340px",
+                right: "115px",
+                width: "405px",
+                height: "110px",
+                borderRadius: "10px",
+              }}
+            />
+
+            <img src={IMAGES.MENU_SCREEN} alt="" />
+
+            <ArrowTitle
+              text="Menu category"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+              img={IMAGES.ARROW_MENU}
+              hover={isHoverMenu}
+              blockStyle={{
+                position: "absolute",
+                bottom: "-150px",
+                left: "40px",
+              }}
+              arrowStyle={{
+                position: "absolute",
+                top: "-188px",
+                left: "209px",
+                width: "185px",
+                height: "185px",
+              }}
+            />
+            <ArrowTitle
+              text="Discount"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+              img={IMAGES.ARROW_DISCOUNT}
+              hover={isHoverDiscount}
+              blockStyle={{
+                position: "absolute",
+                bottom: "-150px",
+                left: "400px",
+              }}
+              arrowStyle={{
+                position: "absolute",
+                top: "-371px",
+                left: "97px",
+                width: "330px",
+                height: "330px",
+              }}
+            />
+            <ArrowTitle
+              text="Menu item"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              img={IMAGES.ARROW_MENU_ITEM}
+              hover={isHoverItem}
+              blockStyle={{
+                position: "absolute",
+                bottom: "-150px",
+                right: "220px",
+              }}
+              arrowStyle={{
+                position: "absolute",
+                top: "-166px",
+                left: "197px",
+                width: "120px",
+                height: "120px",
+              }}
+            />
+
+            {/* that when you hover the mouse over the area, the text is highlighted in <ArrowTitle/> */}
+            <HiddenWrapper
+              setHover={setIsHoverMenu}
+              style={{
+                bottom: "110px",
+                left: "310px",
+                width: "45px",
+                height: "45px",
+                borderRadius: "35px",
+              }}
+            />
+            <HiddenWrapper
+              setHover={setIsHoverDiscount}
+              style={{
+                bottom: "255px",
+                left: "697px",
+                width: "45px",
+                height: "45px",
+                borderRadius: "35px",
+              }}
+            />
+            <HiddenWrapper
+              setHover={setIsHoverItem}
+              style={{
+                bottom: "88px",
+                right: "115px",
+                width: "410px",
+                height: "130px",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 };

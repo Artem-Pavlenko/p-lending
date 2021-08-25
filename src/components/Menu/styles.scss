@@ -1,0 +1,177 @@
+@import "../../utils/variables.scss";
+
+.admin_panel_block {
+  &.menu_block {
+    margin-bottom: 0;
+  }
+
+  .menu_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .menu_1 {
+      margin-bottom: 40px;
+    }
+
+    .img_wrapper {
+      position: relative;
+      width: 100%;
+      margin-bottom: 40px;
+
+      .main_img {
+        width: 100%;
+        margin-top: 52px;
+
+        &.menu_tem {
+          margin-bottom: 40px;
+        }
+
+        &.sale {
+          width: 75%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        &.category {
+          width: 16.5%;
+          min-width: 90px;
+          margin-left: calc(22.5% - 16px);
+        }
+      }
+
+      .sold_arrow {
+        position: absolute;
+        z-index: 2;
+        top: -17px;
+        right: 11%;
+        width: 17px;
+        height: 70px;
+        transform: rotate(-10deg);
+      }
+
+      .discount_arrow {
+        position: absolute;
+        z-index: 2;
+        width: 50%;
+        top: -28%;
+        right: 5%;
+      }
+
+      .category_arrow {
+        position: absolute;
+        z-index: 2;
+        top: 130px;
+        left: 10%;
+        height: 205px;
+      }
+
+      .yellow_ellipse {
+        position: absolute;
+        z-index: 1;
+        top: 45px;
+        right: 11%;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $broom;
+
+        &.menu_item {
+          top: auto;
+          bottom: 37px;
+          right: 31.7%;
+        }
+
+        &.sale {
+          top: 28%;
+          right: 19.5%;
+          width: 4%;
+          height: 20%;
+        }
+
+        &.tab_bar {
+          top: 43%;
+          left: 35%;
+
+          @media screen and (max-width: $table + px) {
+            left: 34%;
+          }
+
+          @media screen and (max-width: 420px) {
+            left: 35.5%;
+          }
+
+          @media screen and (max-width: 390px) {
+            left: 36%;
+          }
+
+          @media screen and (max-width: 375px) {
+            left: 37%;
+          }
+
+          @media screen and (max-width: 320px) {
+            left: 40%;
+          }
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      margin: 0 0 8px;
+      text-align: center;
+      font-family: Indie Flower;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 24px;
+
+      &.menu_category_title {
+        text-align: left;
+      }
+
+      @media screen and (min-width: $tablet + px) {
+        font-size: 46px;
+      }
+    }
+
+    .menu_description {
+      text-align: center;
+      max-width: 202px;
+      font-family: Indie Flower;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 33px;
+      text-align: center;
+      color: $mineShaft;
+      margin: 0 auto;
+
+      &.menu_category_description {
+        width: 100%;
+        margin: 0;
+      }
+
+      @media screen and (min-width: $tablet + px) {
+        font-size: 35px;
+        max-width: 550px;
+      }
+    }
+  }
+
+  .item_arrow {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 30%;
+    width: 46px;
+    height: 46px;
+
+    @media screen and (max-width: $tablet + px) {
+      right: 28%;
+    }
+
+    @media screen and (max-width: $phone + px) {
+      right: 26%;
+    }
+  }
+}

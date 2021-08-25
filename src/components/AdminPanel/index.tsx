@@ -3,8 +3,12 @@ import { FC } from "react";
 import IAdminPanelProps from "./props";
 import "./styles.scss";
 import { Orders, TitleBlock, Menu, Staff } from "..";
+import { DimensionTypes } from "../../utils/constants";
+import { useIsSmallerDimension } from "../../utils/hooks";
 
 export const AdminPanel: FC<IAdminPanelProps> = () => {
+  const isSmallDimension = useIsSmallerDimension(DimensionTypes.Order);
+
   return (
     <div className="admin_panel">
       <TitleBlock
@@ -17,7 +21,7 @@ export const AdminPanel: FC<IAdminPanelProps> = () => {
       />
       <Orders />
       <Menu />
-      <Staff />
+      {!isSmallDimension && <Staff />}
     </div>
   );
 };

@@ -1,14 +1,47 @@
+@import "../../utils/variables.scss";
+
 .admin_panel_block {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 80px;
   margin-bottom: 338px;
 
+  @media screen and (max-width: $order + px) {
+    padding: 0 16px;
+    margin-bottom: 83px;
+  }
+
   .img {
     width: 205px;
     height: 68px;
     margin-bottom: 285px;
+
+    @media screen and (max-width: $order + px) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .order_filter_wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .order_filter {
+      width: 50%;
+      margin-right: 4px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .order_item {
+    width: 75%;
+    margin: 0 10px 40px;
+  }
+
+  .order_description {
+    width: 100%;
+    margin: 0 14px 83px;
   }
 
   .screen_wrapper {

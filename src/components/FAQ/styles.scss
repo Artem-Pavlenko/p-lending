@@ -1,3 +1,5 @@
+@import "../../utils/variables.scss";
+
 .faq {
   position: relative;
   width: 100%;
@@ -13,6 +15,12 @@
     line-height: 94px;
     text-align: center;
     margin-bottom: 73px;
+
+    @media screen and (max-width: $tablet + px) {
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 33px;
+    }
   }
 
   .questions {
@@ -20,11 +28,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 780px;
+
+    @media screen and (max-width: $tablet + px) {
+      padding: 0 16px;
+    }
   }
 
   .footer_bamboo {
     position: absolute;
     z-index: -1;
     top: -75px;
+
+    @media screen and (max-width: $tablet + px) {
+      visibility: hidden;
+    }
   }
 }

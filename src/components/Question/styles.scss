@@ -1,6 +1,12 @@
+@import "../../utils/variables.scss";
+
 .question {
   display: flex;
   margin-bottom: 65px;
+
+  @media screen and (max-width: $tablet + px) {
+    margin-bottom: 25px;
+  }
 
   .question_number {
     position: relative;
@@ -37,6 +43,11 @@
       font-size: 24px;
       line-height: 35px;
       margin: 0 0 10px;
+
+      @media screen and (max-width: $table + px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
     }
     span {
       min-height: 48px;
@@ -45,6 +56,11 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
+
+      @media screen and (max-width: $table + px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 }
