@@ -4,11 +4,24 @@ import IManagementProps from "./props";
 import "./styles.scss";
 import { AnimationManagement, TitleBlock, ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
+import { useIsSmallerDimension } from "../../utils/hooks";
+import { DimensionTypes } from "../../utils/constants";
 
 export const Management: FC<IManagementProps> = () => {
+  const isSmallDimension = useIsSmallerDimension(DimensionTypes.Management);
+
   return (
     <div className="management">
-      <AnimationManagement />
+      {isSmallDimension ? (
+        <div className="wrapper">
+          <img className="mobile_phone_img" src={IMAGES.MOB_MENU} alt="" />
+          <span className="description_text">1 - Restaurant bill</span>
+          <span className="description_text">2 - Vouchers</span>
+        </div>
+      ) : (
+        <AnimationManagement />
+      )}
+
       <div className="description_block">
         <TitleBlock
           marginBottom={100}
@@ -17,33 +30,38 @@ export const Management: FC<IManagementProps> = () => {
            adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc
             schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
         />
-        <ArrowTitle
-          alignItem
-          text="Restaurant bill"
-          img={IMAGES.ARROW}
-          arrowStyle={{
-            position: "absolute",
-            top: "-80px",
-            left: "-100px",
-            width: "82px",
-            height: "23.5px",
-            transform: "rotate(-160deg)",
-          }}
-          blockStyle={{ marginBottom: "110px" }}
-        />
-        <ArrowTitle
-          alignItem
-          text="Vouchers"
-          img={IMAGES.ARROW_TOP}
-          arrowStyle={{
-            position: "absolute",
-            width: "76px",
-            height: "76px",
-            top: "-90px",
-            left: "-100px",
-            transform: "rotate(-30deg)",
-          }}
-        />
+        {!isSmallDimension && (
+          <ArrowTitle
+            alignItem
+            text="Restaurant bill"
+            img={IMAGES.ARROW}
+            arrowStyle={{
+              position: "absolute",
+              top: "-80px",
+              left: "-100px",
+              width: "82px",
+              height: "23.5px",
+              transform: "rotate(-160deg)",
+            }}
+            blockStyle={{ marginBottom: "110px" }}
+          />
+        )}
+
+        {!isSmallDimension && (
+          <ArrowTitle
+            alignItem
+            text="Vouchers"
+            img={IMAGES.ARROW_TOP}
+            arrowStyle={{
+              position: "absolute",
+              width: "76px",
+              height: "76px",
+              top: "-90px",
+              left: "-100px",
+              transform: "rotate(-30deg)",
+            }}
+          />
+        )}
       </div>
     </div>
   );

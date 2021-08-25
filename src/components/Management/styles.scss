@@ -1,9 +1,28 @@
+@import "../../utils/variables.scss";
+
 .management {
   display: flex;
   margin-top: 167px;
   padding-left: 210px;
 
+  @media screen and (max-width: $management + px) {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   .description_block {
     margin-left: 292px;
+
+    @media screen and (max-width: $management + px) {
+      margin: 0 auto;
+    }
   }
 }

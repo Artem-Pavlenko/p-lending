@@ -36,9 +36,10 @@ export const FilterBlock: FC<IFilterBlockProps> = () => {
           />
         )}
       </div>
+
       {isSmallScreen ? (
         <>
-          <img className="mobile_category_img" src={IMAGES.MOB_MENU} alt="" />
+          <img className="mobile_phone_img" src={IMAGES.MOB_MENU} alt="" />
           <span className="description_text">1 - Filter</span>
           <span className="description_text">
             2 - <span className="red_text">SOLD OUT</span> Item
