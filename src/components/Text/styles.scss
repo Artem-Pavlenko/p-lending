@@ -39,6 +39,13 @@ span {
     line-height: 79px;
     color: $killarney;
     margin-bottom: 60px;
+    word-break: break-all;
+
+    @media screen and (max-width: $tablet + px) {
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 32px;
+    }
   }
 
   &.article {

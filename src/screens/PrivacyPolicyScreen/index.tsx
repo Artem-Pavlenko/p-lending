@@ -4,12 +4,13 @@ import IPrivacyPolicyScreenProps from "./props";
 import "./styles.scss";
 import { IMAGES } from "../../assets";
 import { ArticleHeading, Text } from "../../components";
-import { useScrollToStart } from "../../utils/hooks";
-import { Routes, TextStyles } from "../../utils/constants";
+import { useIsSmallerDimension, useScrollToStart } from "../../utils/hooks";
+import { DimensionTypes, Routes, TextStyles } from "../../utils/constants";
 import { Link } from "react-router-dom";
 
 export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
-  useScrollToStart();
+  // useScrollToStart();
+  const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
 
   return (
     <div className="article_wrapper">
@@ -17,18 +18,32 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
         <img className="logo" src={IMAGES.LOGO} alt="" />
       </Link>
 
-      <Text type={TextStyles.ArticleHeader}>Privacy Policy</Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleHeader}
+      >
+        Privacy Policy
+      </Text>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         At Panda, accessible from www.panadamenus.com, one of our main
         priorities is the privacy of our visitors. This Privacy Policy document
         contains types of information that is collected and recorded by Panda
         and how we use it.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         If you have additional questions or require more information about our
         Privacy Policy, do not hesitate to contact us.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         This Privacy Policy applies only to our online activities and is valid
         for visitors to our website with regards to the information that they
         shared and/or collect in Panda. This policy is not applicable to any
@@ -44,19 +59,27 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
       </Text>
 
       <ArticleHeading text="Information we collect" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         The personal information that you are asked to provide, and the reasons
         why you are asked to provide it, will be made clear to you at the point
         we ask you to provide your personal information.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         If you contact us directly, we may receive additional information about
         you such as your name, email address, phone number, the contents of the
         message and/or attachments you may send us, and any other information
         you may choose to provide.
       </Text>
-      <Text type={TextStyles.ArticleText}>
-        {" "}
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         When you register for an Account, we may ask for your contact
         information, including items such as name, company name, address, email
         address, and telephone number.
@@ -82,7 +105,10 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
       </ul>
 
       <ArticleHeading text="Log Files" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Panda follows a standard procedure of using log files. These files log
         visitors when they visit websites. All hosting companies do this and a
         part of hosting services' analytics. The information collected by log
@@ -95,7 +121,10 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
       </Text>
 
       <ArticleHeading text="Cookies and Web Beacons" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Like any other website, Panda uses 'cookies'. These cookies are used to
         store information including visitors' preferences, and the pages on the
         website that the visitor accessed or visited. The information is used to
@@ -107,11 +136,17 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
       </Text>
 
       <ArticleHeading text="Advertising Partners Privacy Policies" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         You may consult this list to find the Privacy Policy for each of the
         advertising partners of Panda.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Third-party ad servers or ad networks uses technologies like cookies,
         JavaScript, or Web Beacons that are used in their respective
         advertisements and links that appear on Panda, which are sent directly
@@ -120,20 +155,29 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
         their advertising campaigns and/or to personalize the advertising
         content that you see on websites that you visit.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Note that Panda has no access to or control over these cookies that are
         used by third-party advertisers.
       </Text>
 
       <ArticleHeading text="Third Party Privacy Policies" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Panda's Privacy Policy does not apply to other advertisers or websites.
         Thus, we are advising you to consult the respective Privacy Policies of
         these third-party ad servers for more detailed information. It may
         include their practices and instructions about how to opt-out of certain
         options.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         You can choose to disable cookies through your individual browser
         options. To know more detailed information about cookie management with
         specific web browsers, it can be found at the browsers' respective
@@ -160,7 +204,10 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
           sell the consumer's personal data.
         </li>
       </ul>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         If you make a request, we have one month to respond to you. If you would
         like to exercise any of these rights, please contact us.
       </Text>
@@ -200,18 +247,27 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
           directly to you, under certain conditions.
         </li>
       </ul>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         If you make a request, we have one month to respond to you. If you would
         like to exercise any of these rights, please contact us.
       </Text>
 
       <ArticleHeading text="Children's Information" />
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Another part of our priority is adding protection for children while
         using the internet. We encourage parents and guardians to observe,
         participate in, and/or monitor and guide their online activity.
       </Text>
-      <Text type={TextStyles.ArticleText}>
+      <Text
+        maxWidth={isSmallDimension ? 600 : 407}
+        type={TextStyles.ArticleText}
+      >
         Panda does not knowingly collect any Personal Identifiable Information
         from children under the age of 13. If you think that your child provided
         this kind of information on our website, we strongly encourage you to

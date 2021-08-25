@@ -1,12 +1,26 @@
+@import "../../utils/variables.scss";
+
 .article_wrapper {
   display: flex;
   flex-direction: column;
   padding: 33px 120px;
 
+  @media screen and (max-width: $tablet + px) {
+    padding: 28px 16px;
+  }
+
   .logo {
     width: 120px;
     height: 64px;
     margin-bottom: 68px;
+
+    @media screen and (max-width: $tablet + px) {
+      margin-bottom: 53px;
+    }
+
+    @media screen and (max-width: $phone + px) {
+      height: 19px;
+    }
   }
 }
 
