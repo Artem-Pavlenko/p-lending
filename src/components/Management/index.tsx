@@ -14,7 +14,7 @@ export const Management: FC<IManagementProps> = () => {
     <div className="management">
       {isSmallDimension ? (
         <div className="wrapper">
-          <img className="mobile_phone_img" src={IMAGES.MOB_MENU} alt="" />
+          <img className="mobile_phone_img" src={IMAGES.MOB_ORDER} alt="" />
           <span className="description_text">1 - Restaurant bill</span>
           <span className="description_text">2 - Vouchers</span>
         </div>
