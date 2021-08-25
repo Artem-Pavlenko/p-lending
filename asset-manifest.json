@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/panda-lending/static/css/main.ff3117a4.chunk.css",
-    "main.js": "/panda-lending/static/js/main.4511ee28.chunk.js",
-    "main.js.map": "/panda-lending/static/js/main.4511ee28.chunk.js.map",
-    "runtime-main.js": "/panda-lending/static/js/runtime-main.3cfce88d.js",
-    "runtime-main.js.map": "/panda-lending/static/js/runtime-main.3cfce88d.js.map",
-    "static/js/2.d6636ac2.chunk.js": "/panda-lending/static/js/2.d6636ac2.chunk.js",
-    "static/js/2.d6636ac2.chunk.js.map": "/panda-lending/static/js/2.d6636ac2.chunk.js.map",
-    "static/js/3.596df73e.chunk.js": "/panda-lending/static/js/3.596df73e.chunk.js",
-    "static/js/3.596df73e.chunk.js.map": "/panda-lending/static/js/3.596df73e.chunk.js.map",
+    "main.css": "/panda-lending/static/css/main.57c533cd.chunk.css",
+    "main.js": "/panda-lending/static/js/main.cca19510.chunk.js",
+    "main.js.map": "/panda-lending/static/js/main.cca19510.chunk.js.map",
+    "runtime-main.js": "/panda-lending/static/js/runtime-main.5983d6f4.js",
+    "runtime-main.js.map": "/panda-lending/static/js/runtime-main.5983d6f4.js.map",
+    "static/js/2.d5704e28.chunk.js": "/panda-lending/static/js/2.d5704e28.chunk.js",
+    "static/js/2.d5704e28.chunk.js.map": "/panda-lending/static/js/2.d5704e28.chunk.js.map",
+    "static/js/3.28d7c3dd.chunk.js": "/panda-lending/static/js/3.28d7c3dd.chunk.js",
+    "static/js/3.28d7c3dd.chunk.js.map": "/panda-lending/static/js/3.28d7c3dd.chunk.js.map",
     "index.html": "/panda-lending/index.html",
-    "static/css/main.ff3117a4.chunk.css.map": "/panda-lending/static/css/main.ff3117a4.chunk.css.map",
-    "static/js/2.d6636ac2.chunk.js.LICENSE.txt": "/panda-lending/static/js/2.d6636ac2.chunk.js.LICENSE.txt",
+    "static/css/main.57c533cd.chunk.css.map": "/panda-lending/static/css/main.57c533cd.chunk.css.map",
+    "static/js/2.d5704e28.chunk.js.LICENSE.txt": "/panda-lending/static/js/2.d5704e28.chunk.js.LICENSE.txt",
     "static/media/animation_category.6972cdec.svg": "/panda-lending/static/media/animation_category.6972cdec.svg",
     "static/media/animation_coupon.80c4f428.svg": "/panda-lending/static/media/animation_coupon.80c4f428.svg",
     "static/media/animation_filter.917a6330.svg": "/panda-lending/static/media/animation_filter.917a6330.svg",
@@ -44,7 +44,8 @@
     "static/media/arrow_waiters_1.89cf42d9.svg": "/panda-lending/static/media/arrow_waiters_1.89cf42d9.svg",
     "static/media/arrow_waiters_2.42e0ad4a.svg": "/panda-lending/static/media/arrow_waiters_2.42e0ad4a.svg",
     "static/media/bamboo.73ffbe05.svg": "/panda-lending/static/media/bamboo.73ffbe05.svg",
-    "static/media/styles.scss": "/panda-lending/static/media/ellipse_2.206abd71.svg",
+    "static/media/drop_down_list.d13287dd.svg": "/panda-lending/static/media/drop_down_list.d13287dd.svg",
+    "static/media/styles.scss": "/panda-lending/static/media/panda.cb69c782.svg",
     "static/media/food.8b2b38a2.svg": "/panda-lending/static/media/food.8b2b38a2.svg",
     "static/media/head.b3e4a49a.svg": "/panda-lending/static/media/head.b3e4a49a.svg",
     "static/media/house.8be20a6c.svg": "/panda-lending/static/media/house.8be20a6c.svg",
@@ -54,6 +55,7 @@
     "static/media/logo_white.e4b5f1ea.svg": "/panda-lending/static/media/logo_white.e4b5f1ea.svg",
     "static/media/menu.0d21fe25.svg": "/panda-lending/static/media/menu.0d21fe25.svg",
     "static/media/menu_screen.d6ad686f.svg": "/panda-lending/static/media/menu_screen.d6ad686f.svg",
+    "static/media/mob_category.c5219552.svg": "/panda-lending/static/media/mob_category.c5219552.svg",
     "static/media/orders.09803f85.svg": "/panda-lending/static/media/orders.09803f85.svg",
     "static/media/orders_screen.83bfa185.svg": "/panda-lending/static/media/orders_screen.83bfa185.svg",
     "static/media/phone_category.e0ef8a45.png": "/panda-lending/static/media/phone_category.e0ef8a45.png",
@@ -69,9 +71,9 @@
     "static/media/tab_bar.087d28eb.png": "/panda-lending/static/media/tab_bar.087d28eb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3cfce88d.js",
-    "static/js/2.d6636ac2.chunk.js",
-    "static/css/main.ff3117a4.chunk.css",
-    "static/js/main.4511ee28.chunk.js"
+    "static/js/runtime-main.5983d6f4.js",
+    "static/js/2.d5704e28.chunk.js",
+    "static/css/main.57c533cd.chunk.css",
+    "static/js/main.cca19510.chunk.js"
   ]
 }
