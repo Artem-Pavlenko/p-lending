@@ -9,6 +9,10 @@
   background-color: $killarney;
   margin-top: 110px;
 
+  @media screen and (max-width: $tablet + px) {
+    height: 320px;
+  }
+
   .footer_nav {
     max-width: 1440px;
     width: 100%;
@@ -18,6 +22,12 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $tablet + px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 16px;
+    }
+
     .link {
       font-style: normal;
       font-weight: bold;
@@ -26,13 +36,33 @@
       color: $white;
       cursor: pointer;
 
+      @media screen and (max-width: $tablet + px) {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+        &:last-of-type {
+          margin-bottom: 15px;
+        }
+      }
+
       &.email {
         text-decoration: underline;
+        margin-bottom: 32px;
       }
+    }
+
+    .footer_button {
+      align-self: center;
     }
 
     .white_logo {
       cursor: pointer;
+
+      @media screen and (max-width: $tablet + px) {
+        height: 19px;
+        margin-bottom: 29px;
+      }
     }
   }
 }

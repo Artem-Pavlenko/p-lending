@@ -38,7 +38,12 @@ export const Footer: FC<IFooterProps> = ({ showModalHandler }) => {
         <a href="mailto:support@pandamenus.com" className="link email">
           support@pandamenus.com
         </a>
-        <Button onClick={showModalHandler} whiteStyle text="Join us" />
+        <Button
+          className="footer_button"
+          onClick={showModalHandler}
+          whiteStyle
+          text="Join us"
+        />
       </div>
     </footer>
   );
