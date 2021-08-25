@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 @mixin mobileView {
-  @media screen and (max-width: $mobile + px) {
+  @media screen and (max-width: $tablet + px) {
     display: none;
   }
 }

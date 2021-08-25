@@ -15,6 +15,13 @@ button {
   border: none;
   cursor: pointer;
 
+  @media screen and (max-width: $tablet + px) {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
   &.white {
     background-color: $white;
     color: $killarney;

@@ -4,7 +4,7 @@ span {
   white-space: normal !important;
   word-wrap: break-word !important;
 
-  @media screen and (max-width: $heading + px) {
+  @media screen and (max-width: $tablet + px) {
     font-size: 24px;
     line-height: 35px;
   }

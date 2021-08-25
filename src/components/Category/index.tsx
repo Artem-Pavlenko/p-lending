@@ -9,7 +9,7 @@ import { useIsSmallerDimension } from "../../utils/hooks";
 import { DimensionTypes } from "../../utils/constants";
 
 export const Category: FC<ICategoryProps> = () => {
-  const isSmallScreen = useIsSmallerDimension(DimensionTypes.Heading);
+  const isSmallScreen = useIsSmallerDimension(DimensionTypes.Tablet);
 
   return (
     <div className="category">
@@ -17,7 +17,7 @@ export const Category: FC<ICategoryProps> = () => {
         <ArrowTitle text="This is category" img={IMAGES.ARROW_RIGHT} />
         {isSmallScreen ? (
           <>
-            <img className="mobile_category_img" src={IMAGES.CATEGORY} />
+            <img className="mobile_category_img" src={IMAGES.CATEGORY} alt="" />
             <span className="description">1 - This is category </span>
             <span className="description">2 - Card of the restaurant</span>
             <span className="description">3 - Tab bar</span>
