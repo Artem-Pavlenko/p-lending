@@ -19,10 +19,10 @@ export const PrivacyPolicyScreen: FC<IPrivacyPolicyScreenProps> = () => {
 
       <Text type={TextStyles.ArticleHeader}>Privacy Policy</Text>
       <Text type={TextStyles.ArticleText}>
-        At Panda, accessible from www.panadamenus.com, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by Panda
-        and how we use it.
+        At Panda, accessible from www.pandamenus.com, one of our main priorities
+        is the privacy of our visitors. This Privacy Policy document contains
+        types of information that is collected and recorded by Panda and how we
+        use it.
       </Text>
       <Text type={TextStyles.ArticleText}>
         If you have additional questions or require more information about our

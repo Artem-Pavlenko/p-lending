@@ -7,11 +7,10 @@ import { AnimationCategory, TitleBlock, ArrowTitle } from "..";
 import { IMAGES } from "../../assets";
 import { useIsSmallerDimension } from "../../utils/hooks";
 import { DimensionTypes } from "../../utils/constants";
+import { NabBarItem } from "../NavBarItem";
 
 export const Category: FC<ICategoryProps> = () => {
   const isSmallScreen = useIsSmallerDimension(DimensionTypes.Category);
-
-  console.log(isSmallScreen);
 
   return (
     <div className="category">
@@ -53,11 +52,8 @@ export const Category: FC<ICategoryProps> = () => {
         {!isSmallScreen && (
           <div className="tab_bar_items">
             <img src={IMAGES.ARROW} alt="" />
-            {tabBar.map(({ img, name }) => (
-              <div key={name} className="item">
-                <img src={img} alt="" />
-                <span className="item_name">{name}</span>
-              </div>
+            {tabBar.map((item, index) => (
+              <NabBarItem img={item.img} name={item.name} index={index} />
             ))}
           </div>
         )}

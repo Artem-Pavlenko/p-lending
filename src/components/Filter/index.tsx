@@ -10,7 +10,7 @@ export const Filter: FC<IFilterProps> = () => {
     <div className="filter">
       <AnimationFilter />
       <div className="arrow_block">
-        <ArrowTitle text="Sold out item" img={IMAGES.ARROW_DOWN} />
+        <ArrowTitle text=" item" redText="Sold out" img={IMAGES.ARROW_DOWN} />
         <ArrowTitle
           paddingText
           text="Discount"

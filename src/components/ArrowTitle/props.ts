@@ -2,6 +2,7 @@ import { CSSProperties } from "react";
 
 export default interface IArrowTitleProps {
   text: string;
+  redText?: string;
   img: string;
   arrowStyle?: CSSProperties;
   blockStyle?: CSSProperties;

@@ -22,8 +22,8 @@ export const TermsConditionsScreen: FC<ITermsConditionsScreenProps> = () => {
       <Text type={TextStyles.ArticleText}>
         These terms and conditions outline the rules and regulations for the use
         of Panda's Website, located at{" "}
-        <Link to="www.panadamenus.com" className="link" target="_blank">
-          www.panadamenus.com
+        <Link to="www.pandamenus.com" className="link" target="_blank">
+          www.pandamenus.com
         </Link>
       </Text>
       <Text type={TextStyles.ArticleText}>
