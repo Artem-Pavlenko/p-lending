@@ -44,7 +44,7 @@ export const Orders: FC<IOrdersProps> = () => {
           <div className="screen_wrapper">
             <ArrowTitle
               text="Tab bar"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="this is navigation tab bar"
               img={IMAGES.ARROW_TAB_BAR}
               hover={isHoverTabBar}
               blockStyle={{
@@ -61,7 +61,7 @@ export const Orders: FC<IOrdersProps> = () => {
             />
             <ArrowTitle
               text="Filter"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description=" Filter by days, weeks or Month"
               img={IMAGES.ARROW_FILTER}
               hover={isHoverFilter}
               blockStyle={{
@@ -78,13 +78,13 @@ export const Orders: FC<IOrdersProps> = () => {
             />
             <ArrowTitle
               text="Pick to order"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="This is where you monitor pick up orders"
               img={IMAGES.ARROW_PICK}
               hover={isHoverPick}
               blockStyle={{
                 position: "absolute",
                 top: "-195px",
-                right: "340px",
+                right: "345px",
               }}
               arrowStyle={{
                 position: "absolute",
@@ -96,7 +96,7 @@ export const Orders: FC<IOrdersProps> = () => {
             />
             <ArrowTitle
               text="Chat"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="Answer or ask your customers about a certain bill or anything else"
               img={IMAGES.ARROW_CHAT}
               hover={isHoverChat}
               blockStyle={{
@@ -158,30 +158,13 @@ export const Orders: FC<IOrdersProps> = () => {
             <img className="order_screen" src={IMAGES.ORDERS_SCREEN} alt="" />
 
             <ArrowTitle
-              text="Tab bar"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
-              img={IMAGES.ARROW_TAB_BAR}
-              hover={isHoverTabBar}
-              blockStyle={{
-                position: "absolute",
-                top: "-195px",
-                left: "65px",
-              }}
-              arrowStyle={{
-                position: "absolute",
-                top: "110px",
-                left: "50px",
-                height: "121px",
-              }}
-            />
-            <ArrowTitle
               text="Order"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="Monitor table numbers, open bills, closed tables, failed payment and pending "
               img={IMAGES.ARROW_ORDER}
               hover={isHoverOrder}
               blockStyle={{
                 position: "absolute",
-                bottom: "-215px",
+                bottom: "-265px",
                 left: "40px",
               }}
               arrowStyle={{
@@ -194,12 +177,12 @@ export const Orders: FC<IOrdersProps> = () => {
             />
             <ArrowTitle
               text="Check"
-              description="Assign table to waiter"
+              description="Assign table to a waiter "
               img={IMAGES.ARROW_CHECK}
               hover={isHoverCheck}
               blockStyle={{
                 position: "absolute",
-                bottom: "-150px",
+                bottom: "-160px",
                 left: "400px",
               }}
               arrowStyle={{
@@ -212,13 +195,13 @@ export const Orders: FC<IOrdersProps> = () => {
             />
             <ArrowTitle
               text="Bill"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="A total breakdown of a specific order "
               img={IMAGES.ARROW_BILL}
               hover={isHoverBill}
               blockStyle={{
                 position: "absolute",
-                bottom: "-215px",
-                right: "370px",
+                bottom: "-205px",
+                right: "373px",
               }}
               arrowStyle={{
                 position: "absolute",

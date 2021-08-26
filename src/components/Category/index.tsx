@@ -35,10 +35,8 @@ export const Category: FC<ICategoryProps> = () => {
       </div>
       <div>
         <TitleBlock
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing
-         elit jklhvkjvf kdvjcospckb kscihoasjc schisdchdsioc kchwejoceqow 
-         dhvokecowjcf akichjk"
+          title="Search"
+          description="You can search restaurants by cuisines and location."
           marginBottom={isSmallScreen ? 40 : 130}
         />
         {!isSmallScreen && (

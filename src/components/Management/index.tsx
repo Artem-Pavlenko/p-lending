@@ -25,10 +25,8 @@ export const Management: FC<IManagementProps> = () => {
       <div className="description_block">
         <TitleBlock
           marginBottom={100}
-          title="Title"
-          description="Lorem ipsum dolor sit amet, consectetur
-           adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc
-            schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
+          title="Active bill"
+          description="Within the Table Management screen, you will find the active bill Tab - this is the current bill that is yet to be paid "
         />
         {!isSmallDimension && (
           <ArrowTitle

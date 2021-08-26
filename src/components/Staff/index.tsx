@@ -11,12 +11,12 @@ export const Staff: FC<IStaffProps> = () => {
   const [isHoverWaiters, setIsHoverWaiters] = useState(false);
 
   return (
-    <div className="admin_panel_block">
+    <div className="admin_panel_block staff_block">
       <img src={IMAGES.STAFF} alt="3.Staff" className="img" />
       <div className="screen_wrapper">
         <ArrowTitle
           text="General manager"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+          description="This would be the super user for the Admin panel"
           img={IMAGES.ARROW_GENERAL}
           hover={isHoverManager}
           blockStyle={{
@@ -34,7 +34,7 @@ export const Staff: FC<IStaffProps> = () => {
         />
         <ArrowTitle
           text="Add staff"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+          description="Here the General Manager can add new staff members"
           img={IMAGES.ARROW_ADD_STAFF}
           hover={isHoverAddStaff}
           blockStyle={{
@@ -77,7 +77,7 @@ export const Staff: FC<IStaffProps> = () => {
 
         <ArrowTitle
           text="Waiters"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+          description="These are all the waiters that have been added and currently working at the venue."
           img={IMAGES.ARROW_WAITERS}
           hover={isHoverWaiters}
           blockStyle={{

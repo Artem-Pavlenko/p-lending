@@ -23,7 +23,7 @@ export const ArrowTitle: FC<IArrowTitleProps> = ({
       {text}
     </span>
     {description && (
-      <span className="description" style={descriptionStyle}>
+      <span className="description_text" style={descriptionStyle}>
         {description}
       </span>
     )}

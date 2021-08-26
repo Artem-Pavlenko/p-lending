@@ -84,19 +84,19 @@ export const Menu: FC<IMenuProps> = () => {
         <>
           <div className="screen_wrapper">
             <ArrowTitle
-              text="Main restaurant photo"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              text="Menu Photo"
+              description="Add /Change the main Menu photo here"
               img={IMAGES.ARROW_MAIN}
               hover={isHoverMain}
               blockStyle={{
                 position: "absolute",
                 top: "-170px",
-                left: "300px",
+                left: "400px",
               }}
               arrowStyle={{
                 position: "absolute",
                 top: "95px",
-                left: "339px",
+                left: "239px",
                 width: "210px",
                 height: "210px",
               }}
@@ -104,7 +104,7 @@ export const Menu: FC<IMenuProps> = () => {
 
             <ArrowTitle
               text="Sold out"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="here you can indicate a sold-out item"
               img={IMAGES.ARROW_SOLD}
               hover={isHoverSold}
               blockStyle={{
@@ -147,13 +147,13 @@ export const Menu: FC<IMenuProps> = () => {
 
             <ArrowTitle
               text="Menu category"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+              description="these are the different menu categories"
               img={IMAGES.ARROW_MENU}
               hover={isHoverMenu}
               blockStyle={{
                 position: "absolute",
-                bottom: "-150px",
-                left: "40px",
+                bottom: "-132px",
+                left: "38px",
               }}
               arrowStyle={{
                 position: "absolute",
@@ -165,12 +165,12 @@ export const Menu: FC<IMenuProps> = () => {
             />
             <ArrowTitle
               text="Discount"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing"
+              description="Discounted items"
               img={IMAGES.ARROW_DISCOUNT}
               hover={isHoverDiscount}
               blockStyle={{
                 position: "absolute",
-                bottom: "-150px",
+                bottom: "-110px",
                 left: "400px",
               }}
               arrowStyle={{
@@ -183,12 +183,12 @@ export const Menu: FC<IMenuProps> = () => {
             />
             <ArrowTitle
               text="Menu item"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing "
+              description="This highlights each menu items and all the ingredients"
               img={IMAGES.ARROW_MENU_ITEM}
               hover={isHoverItem}
               blockStyle={{
                 position: "absolute",
-                bottom: "-150px",
+                bottom: "-165px",
                 right: "220px",
               }}
               arrowStyle={{

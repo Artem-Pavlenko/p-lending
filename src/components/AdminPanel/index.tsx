@@ -15,9 +15,7 @@ export const AdminPanel: FC<IAdminPanelProps> = () => {
         center
         maxWidth={996}
         title="Admin Panel"
-        description="Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc
-          schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
+        description="This is where business carry out admin duties via Panda’s API"
       />
       <Orders />
       <Menu />

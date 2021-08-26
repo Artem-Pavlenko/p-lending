@@ -1,6 +1,11 @@
-.waiters_arrow {
-  position: absolute;
-  bottom: -55px;
-  left: 560px;
-  transform: rotate(-2deg);
+.admin_panel_block {
+  &.staff_block {
+    margin-top: 230px;
+  }
+  .waiters_arrow {
+    position: absolute;
+    bottom: -55px;
+    left: 560px;
+    transform: rotate(-2deg);
+  }
 }

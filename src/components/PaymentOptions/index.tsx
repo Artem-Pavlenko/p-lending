@@ -17,10 +17,8 @@ export const PaymentOptions: FC<IPaymentOptionsProps> = () => {
         center
         maxWidth={725}
         marginBottom={63}
-        title="Title"
-        description="Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit jklhvkjvf kdvjcospckb kscihoasjc 
-         schisdchdsioc kchwejoceqow dhvokecowjcf akichjk"
+        title="Table Management"
+        description="This is where you manage your receipts, bills, and reservations "
       />
       {isSmallDimension ? (
         <div className="wrapper">

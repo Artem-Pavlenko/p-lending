@@ -15,11 +15,8 @@ export const FilterBlock: FC<IFilterBlockProps> = () => {
       <div className="description-block">
         <div className="tab_bar_animation">
           <TitleBlock
-            title="Title"
-            description="Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit jklhvkjvf 
-              kdvjcospckb kscihoasjc schisdchdsioc 
-              kchwejoceqow dhvokecowjcf akichjk"
+            title="Menu"
+            description="On the menu page, you can filter by Allergies and food types plus add items to the cart"
           />
 
           {!isSmallScreen && <AnimationTabBar />}
