@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/panda-lending/static/css/main.333093b4.chunk.css",
-    "main.js": "/panda-lending/static/js/main.1d775ebd.chunk.js",
-    "main.js.map": "/panda-lending/static/js/main.1d775ebd.chunk.js.map",
+    "main.css": "/panda-lending/static/css/main.6db9a5ed.chunk.css",
+    "main.js": "/panda-lending/static/js/main.2ec9a8f9.chunk.js",
+    "main.js.map": "/panda-lending/static/js/main.2ec9a8f9.chunk.js.map",
     "runtime-main.js": "/panda-lending/static/js/runtime-main.b4d76aa9.js",
     "runtime-main.js.map": "/panda-lending/static/js/runtime-main.b4d76aa9.js.map",
     "static/js/2.95b7424b.chunk.js": "/panda-lending/static/js/2.95b7424b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e1149301.chunk.js": "/panda-lending/static/js/3.e1149301.chunk.js",
     "static/js/3.e1149301.chunk.js.map": "/panda-lending/static/js/3.e1149301.chunk.js.map",
     "index.html": "/panda-lending/index.html",
-    "static/css/main.333093b4.chunk.css.map": "/panda-lending/static/css/main.333093b4.chunk.css.map",
+    "static/css/main.6db9a5ed.chunk.css.map": "/panda-lending/static/css/main.6db9a5ed.chunk.css.map",
     "static/js/2.95b7424b.chunk.js.LICENSE.txt": "/panda-lending/static/js/2.95b7424b.chunk.js.LICENSE.txt",
     "static/media/animation_category.6972cdec.svg": "/panda-lending/static/media/animation_category.6972cdec.svg",
     "static/media/animation_coupon.80c4f428.svg": "/panda-lending/static/media/animation_coupon.80c4f428.svg",
@@ -86,7 +86,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4d76aa9.js",
     "static/js/2.95b7424b.chunk.js",
-    "static/css/main.333093b4.chunk.css",
-    "static/js/main.1d775ebd.chunk.js"
+    "static/css/main.6db9a5ed.chunk.css",
+    "static/js/main.2ec9a8f9.chunk.js"
   ]
 }
