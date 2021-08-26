@@ -23,7 +23,22 @@ export const Orders: FC<IOrdersProps> = () => {
       <img src={IMAGES.ORDERS} alt="1.Orders" className="img" />
 
       {isSmallDimension ? (
-        <></>
+        <>
+          <div className="order_filter_wrapper">
+            <img
+              src={IMAGES.MOB_ORDERS_FILTER}
+              alt=""
+              className="order_filter"
+            />
+          </div>
+
+          <img src={IMAGES.MOB_ORDER_ITEM} alt="" className="order_item" />
+          <img
+            src={IMAGES.MOB_ORDER_DESCRIPTION}
+            alt=""
+            className="order_description"
+          />
+        </>
       ) : (
         <>
           <div className="screen_wrapper">
