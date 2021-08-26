@@ -4,7 +4,8 @@ import IModalProps from "./props";
 import "./styles.scss";
 import { Input, Text, Button, DropDownList } from "..";
 import { IMAGES } from "../../assets";
-import { TextStyles } from "../../utils/constants";
+import { DimensionTypes, TextStyles } from "../../utils/constants";
+import { useIsSmallerDimension } from "../../utils/hooks";
 
 export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [restaurantName, setRestaurantName] = useState("");
@@ -15,10 +16,12 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [checkedVenue, setCheckedVenue] = useState("");
   const [checkedSort, setCheckedSort] = useState("");
 
+  const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
+
   const list1 = ["Type", "Type2", "Type3"];
 
   useEffect(() => {
-    if (showModal) {
+    if (showModal && !isSmallDimension) {
       document.body.style.height = "100vh";
       document.body.style.overflow = "hidden";
     }

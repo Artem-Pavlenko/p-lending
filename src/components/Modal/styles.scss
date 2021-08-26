@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   transition: all 0.5s ease-out;
   opacity: 0;
@@ -38,6 +39,17 @@
     transform: scale(0.5);
     transition: 0.5s;
     overflow: hidden;
+    overflow-x: hidden;
+
+    @media screen and (max-width: $tablet + px) {
+      max-width: 95vw;
+      padding: 8px 16px;
+      height: 95vh;
+      min-height: 300px;
+    }
+    @media screen and (max-width: $phone + px) {
+      overflow-y: auto;
+    }
 
     &.active {
       transform: scale(1);
@@ -66,14 +78,23 @@
       width: 100%;
       margin-top: 30px;
 
+      @media screen and (max-width: $tablet + px) {
+        margin-top: 23px;
+      }
+
       .fields_wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 10px 0 60px;
         padding-top: 30px;
         padding-bottom: 33px;
         border-top: 2px solid $gallery;
+
+        @media screen and (max-width: $phone + px) {
+          margin-bottom: 0px;
+        }
       }
     }
 

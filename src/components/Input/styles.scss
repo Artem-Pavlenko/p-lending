@@ -1,7 +1,19 @@
+@import "../../utils/variables.scss";
+
 .input_wrapper {
+  width: 100%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  @media screen and (max-width: $phone + px) {
+    max-width: 400px;
+  }
+
+  @media screen and (max-width: $smallPhone + px) {
+    margin-bottom: 16px;
+  }
 
   .input_title {
     position: relative;
@@ -12,6 +24,10 @@
     color: #35644a;
     padding-left: 40px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $tablet + px) {
+      margin-bottom: 8px;
+    }
 
     &:before {
       position: absolute;
@@ -25,12 +41,17 @@
   }
 
   input {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 34px;
     border-radius: 100px;
     border: 1px solid rgba(53, 100, 74, 0.15);
     outline: none;
     padding-left: 15px;
+
+    @media screen and (max-width: $phone + px) {
+      max-width: 400px;
+    }
 
     &::placeholder {
       font-style: normal;
