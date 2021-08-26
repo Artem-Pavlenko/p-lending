@@ -7,9 +7,9 @@ import { TextStyles } from "../../utils/constants";
 export const Text: FC<ITextProps> = ({
   children,
   type = TextStyles.Description,
-  maxWidth = 407,
+  style,
 }) => (
-  <span className={type} style={{ maxWidth: `${maxWidth}px` }}>
+  <span style={style} className={type}>
     {children}
   </span>
 );

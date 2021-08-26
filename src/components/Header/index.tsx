@@ -30,7 +30,7 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
           type={
             isSmallDimension ? TextStyles.AdaptiveHeader : TextStyles.Header
           }
-          maxWidth={770}
+          style={{ maxWidth: "770px" }}
         >
           Welcome to Panda, The all in one App for Bars, Restaurants and Event
           Spaces

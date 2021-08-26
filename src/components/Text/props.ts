@@ -1,9 +1,9 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 
 import { TextStyles } from "../../utils/constants";
 
-export default interface ITextprops {
+export default interface ITextProps {
   type?: TextStyles;
+  style?: CSSProperties;
   children: React.ReactNode;
-  maxWidth?: number;
 }
