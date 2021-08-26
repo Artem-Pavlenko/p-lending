@@ -30,11 +30,21 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
           type={
             isSmallDimension ? TextStyles.AdaptiveHeader : TextStyles.Header
           }
-          style={{ maxWidth: "770px" }}
+          style={{
+            maxWidth: "770px",
+            marginBottom: isSmallDimension ? "16px" : "160px",
+          }}
         >
           Welcome to Panda, The all in one App for Bars, Restaurants and Event
           Spaces
         </Text>
+
+        {isSmallDimension && (
+          <span className="header_title">
+            Search, Book, Order and Pay with Panda
+          </span>
+        )}
+
         <div
           ref={animationRef}
           className={`button_wrapper ${
