@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/panda-lending/static/css/main.682c0329.chunk.css",
-    "main.js": "/panda-lending/static/js/main.7bed01ae.chunk.js",
-    "main.js.map": "/panda-lending/static/js/main.7bed01ae.chunk.js.map",
+    "main.js": "/panda-lending/static/js/main.e7087935.chunk.js",
+    "main.js.map": "/panda-lending/static/js/main.e7087935.chunk.js.map",
     "runtime-main.js": "/panda-lending/static/js/runtime-main.b4d76aa9.js",
     "runtime-main.js.map": "/panda-lending/static/js/runtime-main.b4d76aa9.js.map",
     "static/js/2.95b7424b.chunk.js": "/panda-lending/static/js/2.95b7424b.chunk.js",
@@ -87,6 +87,6 @@
     "static/js/runtime-main.b4d76aa9.js",
     "static/js/2.95b7424b.chunk.js",
     "static/css/main.682c0329.chunk.css",
-    "static/js/main.7bed01ae.chunk.js"
+    "static/js/main.e7087935.chunk.js"
   ]
 }
