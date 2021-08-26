@@ -27,7 +27,7 @@ export const Menu: FC<IMenuProps> = () => {
           {/* sold out block */}
           <p>Sold out</p>
           <span className="menu_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
+            here you can indicate a sold-out item
           </span>
           <div className="img_wrapper">
             <img src={IMAGES.MOB_ARROW_SOLD} alt="" className="sold_arrow" />
@@ -46,9 +46,7 @@ export const Menu: FC<IMenuProps> = () => {
             <div className="yellow_ellipse sale" />
           </div>
           <p>Discount</p>
-          <span className="menu_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-          </span>
+          <span className="menu_description">Discounted items</span>
 
           {/* menu category block */}
           <div className="img_wrapper discount">
@@ -64,7 +62,7 @@ export const Menu: FC<IMenuProps> = () => {
           </div>
           <p className="menu_category_title">Menu category</p>
           <span className="menu_description menu_category_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
+            these are the different menu categories
           </span>
 
           {/* menu item block */}
@@ -77,7 +75,7 @@ export const Menu: FC<IMenuProps> = () => {
           </div>
           <p>Menu item</p>
           <span className="menu_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing
+            This highlights each menu items and all the ingredients
           </span>
         </div>
       ) : (
