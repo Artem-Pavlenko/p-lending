@@ -118,12 +118,19 @@
     }
 
     .header_title {
-      width: 120px;
       font-weight: 500;
-      font-size: 13px;
-      line-height: 19px;
-      color: #35644a;
-      margin-bottom: 146px;
+      font-size: 24px;
+      line-height: 35px;
+      color: $killarney;
+      margin-bottom: 60px;
+
+      @media screen and (max-width: $tablet + px) {
+        width: 120px;
+        margin-bottom: 146px;
+
+        font-size: 13px;
+        line-height: 19px;
+      }
     }
   }
 }
