@@ -31,6 +31,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
       venueType: checkedVenue,
       posType: checkedSort,
     });
+    onClose();
   };
 
   useEffect(() => {
