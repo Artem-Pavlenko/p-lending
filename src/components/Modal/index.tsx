@@ -79,7 +79,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
             <Input
               value={restaurantName}
               onChange={setRestaurantName}
-              title="Name of Restaurants"
+              title="Name of Venue"
               placeholder="Name"
             />
             <Input
