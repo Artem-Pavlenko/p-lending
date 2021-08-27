@@ -29,13 +29,13 @@ export const Footer: FC<IFooterProps> = ({ showModalHandler }) => {
           className="white_logo"
         />
 
-        <Link to={Routes.PrivacyPolicy} className="link">
+        <Link to={Routes.PrivacyPolicy} className="footer_link">
           Privacy Policy
         </Link>
-        <Link to={Routes.TermsConditions} className="link">
+        <Link to={Routes.TermsConditions} className="footer_link">
           Terms&Conditions
         </Link>
-        <a href="mailto:support@pandamenus.com" className="link email">
+        <a href="mailto:support@pandamenus.com" className="footer_link email">
           support@pandamenus.com
         </a>
         <Button

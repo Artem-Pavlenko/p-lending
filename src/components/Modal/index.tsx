@@ -1,6 +1,7 @@
 import { FC, FormEvent, useEffect, useState } from "react";
 
 import IModalProps from "./props";
+import { POS, venueTypes } from "./data";
 import "./styles.scss";
 import { Input, Text, Button, DropDownList } from "..";
 import { IMAGES } from "../../assets";
@@ -18,8 +19,6 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [checkedSort, setCheckedSort] = useState("");
 
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
-
-  const list1 = ["Type", "Type2", "Type3"];
 
   const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     addPartner({
@@ -91,13 +90,13 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
             />
             <DropDownList
               title="Type of venue "
-              list={list1}
+              list={venueTypes}
               checked={checkedVenue}
               setChecked={setCheckedVenue}
             />
             <DropDownList
               title="What sort of POS do you have ?"
-              list={list1}
+              list={POS}
               checked={checkedSort}
               setChecked={setCheckedSort}
             />

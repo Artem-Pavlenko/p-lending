@@ -2,7 +2,21 @@
   font-family: "Indie Flower";
   src: url("IndieFlower-Regular.ttf");
   src: local("Indie Flower"), local("IndieFlowerDemi"),
-    url("../fonts/IndieFlower-Regular.ttf") format("truetype");
+    url(./IndieFlower-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display") url(./HelveticaNowDisplay-Medium.woff)
+    format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display") url(./HelveticaNowDisplay-Medium.ttf)
+    format("truetype");
+  font-weight: 700;
 }
