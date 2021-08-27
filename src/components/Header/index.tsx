@@ -25,7 +25,7 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
 
       <div className="gradient_fixed" />
 
-      <div className="header-wrapper">
+      <div className="header_wrapper">
         <Text
           type={
             isSmallDimension ? TextStyles.AdaptiveHeader : TextStyles.Header

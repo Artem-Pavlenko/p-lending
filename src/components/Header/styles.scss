@@ -89,11 +89,12 @@
     }
   }
 
-  .header-wrapper {
+  .header_wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 192px 120px 0;
+    font-family: "Helvetica Now Display";
 
     @media screen and (max-width: $tablet + px) {
       padding: 73px 16px 0;
@@ -123,6 +124,7 @@
       line-height: 35px;
       color: $killarney;
       margin-bottom: 60px;
+      font-family: "Helvetica Now Display";
 
       @media screen and (max-width: $tablet + px) {
         width: 120px;
