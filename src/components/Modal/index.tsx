@@ -19,6 +19,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [checkedSort, setCheckedSort] = useState("");
 
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
+  const isPhoneDimension = useIsSmallerDimension(DimensionTypes.Phone);
 
   const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     addPartner({
@@ -56,51 +57,107 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
         <Text type={TextStyles.ModalHeader}>Join us!</Text>
 
         <form onSubmit={submitHandler}>
-          <Input
-            value={partnerName}
-            onChange={setPartnerName}
-            title="Name"
-            placeholder="Name"
-          />
+          {isPhoneDimension ? (
+            <>
+              <Input
+                value={partnerName}
+                onChange={setPartnerName}
+                title="Name"
+                placeholder="Name"
+              />
 
-          <div className="fields_wrapper">
-            <Input
-              value={positionAtVenue}
-              onChange={setPositionAtVenue}
-              title="Position at the Venue"
-              placeholder="Position"
-            />
-            <Input
-              value={address}
-              onChange={setAddress}
-              title="Address"
-              placeholder="Address"
-            />
-            <Input
-              value={restaurantName}
-              onChange={setRestaurantName}
-              title="Name of Venue"
-              placeholder="Name"
-            />
-            <Input
-              value={websiteUrl}
-              onChange={setWebsiteUrl}
-              title="Website"
-              placeholder="Website"
-            />
-            <DropDownList
-              title="Type of venue "
-              list={venueTypes}
-              checked={checkedVenue}
-              setChecked={setCheckedVenue}
-            />
-            <DropDownList
-              title="What sort of POS do you have ?"
-              list={POS}
-              checked={checkedSort}
-              setChecked={setCheckedSort}
-            />
-          </div>
+              <div className="fields_wrapper">
+                <Input
+                  value={positionAtVenue}
+                  onChange={setPositionAtVenue}
+                  title="Position at the Venue"
+                  placeholder="Position"
+                />
+                <Input
+                  value={restaurantName}
+                  onChange={setRestaurantName}
+                  title="Name of Venue"
+                  placeholder="Name"
+                />
+                <DropDownList
+                  title="Type of venue"
+                  list={venueTypes}
+                  checked={checkedVenue}
+                  setChecked={setCheckedVenue}
+                />
+                <div className="border" />
+
+                <Input
+                  value={address}
+                  onChange={setAddress}
+                  title="Address"
+                  placeholder="Address"
+                />
+
+                <Input
+                  value={websiteUrl}
+                  onChange={setWebsiteUrl}
+                  title="Website"
+                  placeholder="Website"
+                />
+
+                <DropDownList
+                  title="What sort of POS do you have ?"
+                  list={POS}
+                  checked={checkedSort}
+                  setChecked={setCheckedSort}
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              <Input
+                value={partnerName}
+                onChange={setPartnerName}
+                title="Name"
+                placeholder="Name"
+              />
+              <div className="fields_wrapper">
+                <Input
+                  value={positionAtVenue}
+                  onChange={setPositionAtVenue}
+                  title="Position at the Venue"
+                  placeholder="Position"
+                />
+                <Input
+                  value={address}
+                  onChange={setAddress}
+                  title="Address"
+                  placeholder="Address"
+                />
+                <Input
+                  value={restaurantName}
+                  onChange={setRestaurantName}
+                  title="Name of Venue"
+                  placeholder="Name"
+                />
+                <Input
+                  value={websiteUrl}
+                  onChange={setWebsiteUrl}
+                  title="Website"
+                  placeholder="Website"
+                />
+                <DropDownList
+                  title="Type of venue "
+                  list={venueTypes}
+                  checked={checkedVenue}
+                  setChecked={setCheckedVenue}
+                />
+                <DropDownList
+                  title="What sort of POS do you have ?"
+                  list={POS}
+                  checked={checkedSort}
+                  setChecked={setCheckedSort}
+                />
+              </div>
+            </>
+          )}
+
           <Button className="center" text="Join us" onClick={() => {}} />
         </form>
 
