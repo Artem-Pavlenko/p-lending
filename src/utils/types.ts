@@ -9,3 +9,13 @@ export interface ISize {
   width: number | undefined;
   height: number | undefined;
 }
+
+export interface IPartner {
+  partnerName: string;
+  positionAtVenue: string;
+  address: string;
+  restaurantName: string;
+  websiteUrl: string;
+  venueType: string;
+  posType: string;
+}

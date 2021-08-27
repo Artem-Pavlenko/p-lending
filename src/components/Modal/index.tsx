@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { FC, FormEvent, useEffect, useState } from "react";
 
 import IModalProps from "./props";
 import "./styles.scss";
@@ -6,19 +6,32 @@ import { Input, Text, Button, DropDownList } from "..";
 import { IMAGES } from "../../assets";
 import { DimensionTypes, TextStyles } from "../../utils/constants";
 import { useIsSmallerDimension } from "../../utils/hooks";
+import { addPartner } from "../../utils/api";
 
 export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [restaurantName, setRestaurantName] = useState("");
-  const [position, setPosition] = useState("");
+  const [positionAtVenue, setPositionAtVenue] = useState("");
   const [address, setAddress] = useState("");
-  const [website, setWebsite] = useState("");
-  const [name, setName] = useState("");
+  const [websiteUrl, setWebsiteUrl] = useState("");
+  const [partnerName, setPartnerName] = useState("");
   const [checkedVenue, setCheckedVenue] = useState("");
   const [checkedSort, setCheckedSort] = useState("");
 
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
 
   const list1 = ["Type", "Type2", "Type3"];
+
+  const submitHandler = (e: FormEvent<HTMLFormElement>) => {
+    addPartner({
+      address,
+      partnerName,
+      positionAtVenue,
+      restaurantName,
+      websiteUrl,
+      venueType: checkedVenue,
+      posType: checkedSort,
+    });
+  };
 
   useEffect(() => {
     if (showModal && !isSmallDimension) {
@@ -42,18 +55,18 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
 
         <Text type={TextStyles.ModalHeader}>Join us!</Text>
 
-        <form>
+        <form onSubmit={submitHandler}>
           <Input
-            value={name}
-            onChange={setName}
+            value={partnerName}
+            onChange={setPartnerName}
             title="Name"
             placeholder="Name"
           />
 
           <div className="fields_wrapper">
             <Input
-              value={position}
-              onChange={setPosition}
+              value={positionAtVenue}
+              onChange={setPositionAtVenue}
               title="Position at the Venue"
               placeholder="Position"
             />
@@ -70,8 +83,8 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
               placeholder="Name"
             />
             <Input
-              value={website}
-              onChange={setWebsite}
+              value={websiteUrl}
+              onChange={setWebsiteUrl}
               title="Website"
               placeholder="Website"
             />

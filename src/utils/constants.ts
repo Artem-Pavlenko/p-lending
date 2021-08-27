@@ -34,3 +34,5 @@ export const DIMENSIONS: Record<DimensionTypes, number> = {
   PAYMENT: 1156,
   ORDER: 1330,
 };
+
+export const BASE_URL = "http://18.133.37.156:4444/";
