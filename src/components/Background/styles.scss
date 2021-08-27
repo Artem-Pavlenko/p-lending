@@ -9,6 +9,10 @@
   align-items: center;
   overflow: hidden;
 
+  @media screen and (max-width: $phone + px) {
+    padding: 0;
+  }
+
   > img {
     position: absolute;
     object-fit: cover;
