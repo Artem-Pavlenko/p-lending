@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/panda-lending/static/css/main.0e42f70a.chunk.css",
-    "main.js": "/panda-lending/static/js/main.db3b83c5.chunk.js",
-    "main.js.map": "/panda-lending/static/js/main.db3b83c5.chunk.js.map",
-    "runtime-main.js": "/panda-lending/static/js/runtime-main.ce59dad5.js",
-    "runtime-main.js.map": "/panda-lending/static/js/runtime-main.ce59dad5.js.map",
-    "static/js/2.95b7424b.chunk.js": "/panda-lending/static/js/2.95b7424b.chunk.js",
-    "static/js/2.95b7424b.chunk.js.map": "/panda-lending/static/js/2.95b7424b.chunk.js.map",
-    "static/js/3.3ee7b97c.chunk.js": "/panda-lending/static/js/3.3ee7b97c.chunk.js",
-    "static/js/3.3ee7b97c.chunk.js.map": "/panda-lending/static/js/3.3ee7b97c.chunk.js.map",
+    "main.js": "/panda-lending/static/js/main.a432ea65.chunk.js",
+    "main.js.map": "/panda-lending/static/js/main.a432ea65.chunk.js.map",
+    "runtime-main.js": "/panda-lending/static/js/runtime-main.528af591.js",
+    "runtime-main.js.map": "/panda-lending/static/js/runtime-main.528af591.js.map",
+    "static/js/2.99c7dd89.chunk.js": "/panda-lending/static/js/2.99c7dd89.chunk.js",
+    "static/js/2.99c7dd89.chunk.js.map": "/panda-lending/static/js/2.99c7dd89.chunk.js.map",
+    "static/js/3.a45cf6e0.chunk.js": "/panda-lending/static/js/3.a45cf6e0.chunk.js",
+    "static/js/3.a45cf6e0.chunk.js.map": "/panda-lending/static/js/3.a45cf6e0.chunk.js.map",
     "index.html": "/panda-lending/index.html",
     "static/css/main.0e42f70a.chunk.css.map": "/panda-lending/static/css/main.0e42f70a.chunk.css.map",
-    "static/js/2.95b7424b.chunk.js.LICENSE.txt": "/panda-lending/static/js/2.95b7424b.chunk.js.LICENSE.txt",
+    "static/js/2.99c7dd89.chunk.js.LICENSE.txt": "/panda-lending/static/js/2.99c7dd89.chunk.js.LICENSE.txt",
     "static/media/animation_category.6972cdec.svg": "/panda-lending/static/media/animation_category.6972cdec.svg",
     "static/media/animation_coupon.80c4f428.svg": "/panda-lending/static/media/animation_coupon.80c4f428.svg",
     "static/media/animation_filter.917a6330.svg": "/panda-lending/static/media/animation_filter.917a6330.svg",
@@ -84,9 +84,9 @@
     "static/media/tab_bar.087d28eb.png": "/panda-lending/static/media/tab_bar.087d28eb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce59dad5.js",
-    "static/js/2.95b7424b.chunk.js",
+    "static/js/runtime-main.528af591.js",
+    "static/js/2.99c7dd89.chunk.js",
     "static/css/main.0e42f70a.chunk.css",
-    "static/js/main.db3b83c5.chunk.js"
+    "static/js/main.a432ea65.chunk.js"
   ]
 }
