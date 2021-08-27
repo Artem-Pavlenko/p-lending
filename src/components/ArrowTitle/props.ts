@@ -1,9 +1,9 @@
 import { CSSProperties } from "react";
 
 export default interface IArrowTitleProps {
-  text: string;
+  text?: string;
   redText?: string;
-  img: string;
+  img?: string;
   arrowStyle?: CSSProperties;
   blockStyle?: CSSProperties;
   descriptionStyle?: CSSProperties;

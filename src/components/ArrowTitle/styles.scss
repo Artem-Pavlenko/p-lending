@@ -28,6 +28,10 @@
       text-shadow: 1px 0px 0px black, -1px 0 0 black;
       transition: all 0.3s linear;
     }
+
+    @media screen and (max-width: $mobile + px) {
+      font-size: 30px;
+    }
   }
 
   > img {
@@ -46,5 +50,11 @@
     line-height: 29px;
     color: $mineShaft;
     margin-top: 19px;
+
+    @media screen and (max-width: $mobile + px) {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
   }
 }

@@ -44,7 +44,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
       document.body.style.height = "auto";
       document.body.style.overflow = "auto";
     };
-  }, [showModal]);
+  }, [showModal, isSmallDimension]);
 
   return (
     <div onClick={onClose} className={`modal_wrapper ${showModal && "active"}`}>

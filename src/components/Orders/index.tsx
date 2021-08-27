@@ -32,12 +32,70 @@ export const Orders: FC<IOrdersProps> = () => {
             />
           </div>
 
+          <ArrowTitle
+            description="Filter by days, weeks or Month "
+            blockStyle={{
+              position: "absolute",
+              top: "119px",
+              right: "15px",
+              display: "flex",
+              background: "white",
+            }}
+          />
+
           <img src={IMAGES.MOB_ORDER_ITEM} alt="" className="order_item" />
+
+          <ArrowTitle
+            description="Monitor table numbers, open bills, closed tables, failed payment and pending"
+            blockStyle={{
+              position: "absolute",
+              top: "356px",
+              left: "5px",
+              display: "flex",
+              background: "white",
+            }}
+          />
+
           <img
             src={IMAGES.MOB_ORDER_DESCRIPTION}
             alt=""
             className="order_description"
           />
+
+          <ArrowTitle
+            description="Answer or ask your customers about a certain bill or anything else."
+            blockStyle={{
+              position: "absolute",
+              top: "490px",
+              right: "5px",
+              display: "flex",
+              background: "white",
+            }}
+          />
+          <ArrowTitle
+            description="This is where you monitor pick up orders"
+            blockStyle={{
+              position: "absolute",
+              top: "623px",
+              left: "15px",
+              display: "flex",
+              background: "white",
+            }}
+          />
+          <ArrowTitle
+            description="This is where you monitor pick up orders"
+            blockStyle={{
+              position: "absolute",
+              top: "1170px",
+              left: "70px",
+              display: "flex",
+              background: "white",
+            }}
+          />
+
+          <span className="restaurant_photo_description">
+            Add /Change the main Menu photo here
+          </span>
         </>
       ) : (
         <>

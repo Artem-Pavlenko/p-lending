@@ -13,6 +13,22 @@
     margin-bottom: 83px;
   }
 
+  .restaurant_photo_description {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    top: 1560px;
+    left: 35px;
+    width: 202px;
+    font-family: Indie Flower;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    background: white;
+  }
+
   .img {
     width: 205px;
     height: 68px;
@@ -41,7 +57,7 @@
 
   .order_description {
     width: 100%;
-    margin: 0 14px 83px;
+    margin: 20px 14px 83px;
   }
 
   .screen_wrapper {

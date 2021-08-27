@@ -180,7 +180,7 @@ export const Menu: FC<IMenuProps> = () => {
               }}
             />
             <ArrowTitle
-              text="Menu item"
+              text="Menu items"
               description="This highlights each menu items and all the ingredients"
               img={IMAGES.ARROW_MENU_ITEM}
               hover={isHoverItem}
