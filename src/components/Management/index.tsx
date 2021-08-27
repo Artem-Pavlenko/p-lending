@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import IManagementProps from "./props";
 import "./styles.scss";
-import { AnimationManagement, TitleBlock, ArrowTitle } from "..";
+import { AnimationManagement, TitleBlock, ArrowTitle, InfoText } from "..";
 import { IMAGES } from "../../assets";
 import { useIsSmallerDimension } from "../../utils/hooks";
 import { DimensionTypes } from "../../utils/constants";
@@ -29,36 +29,50 @@ export const Management: FC<IManagementProps> = () => {
           description="Within the Table Management screen, you will find the active bill Tab - this is the current bill that is yet to be paid "
         />
         {!isSmallDimension && (
-          <ArrowTitle
-            alignItem
-            text="Restaurant bill"
-            img={IMAGES.ARROW}
-            arrowStyle={{
-              position: "absolute",
-              top: "-80px",
-              left: "-100px",
-              width: "82px",
-              height: "23.5px",
-              transform: "rotate(-160deg)",
-            }}
-            blockStyle={{ marginBottom: "110px" }}
-          />
+          <>
+            <ArrowTitle
+              alignItem
+              text="Restaurant bill"
+              img={IMAGES.ARROW}
+              arrowStyle={{
+                position: "absolute",
+                top: "-80px",
+                left: "-100px",
+                width: "82px",
+                height: "23.5px",
+                transform: "rotate(-160deg)",
+              }}
+              blockStyle={{ marginBottom: "110px" }}
+            />
+
+            <InfoText
+              text="a breakdown of items on your receipt "
+              className="bill_description"
+            />
+          </>
         )}
 
         {!isSmallDimension && (
-          <ArrowTitle
-            alignItem
-            text="Vouchers"
-            img={IMAGES.ARROW_TOP}
-            arrowStyle={{
-              position: "absolute",
-              width: "76px",
-              height: "76px",
-              top: "-90px",
-              left: "-100px",
-              transform: "rotate(-30deg)",
-            }}
-          />
+          <>
+            <ArrowTitle
+              alignItem
+              text="Vouchers"
+              img={IMAGES.ARROW_TOP}
+              arrowStyle={{
+                position: "absolute",
+                width: "76px",
+                height: "76px",
+                top: "-90px",
+                left: "-100px",
+                transform: "rotate(-30deg)",
+              }}
+            />
+
+            <InfoText
+              text="this is the voucher that was applied to the bill"
+              className="vouchers_description"
+            />
+          </>
         )}
       </div>
     </div>

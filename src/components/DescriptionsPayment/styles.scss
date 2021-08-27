@@ -4,6 +4,21 @@
   justify-content: center;
 
   .phone_wrapper {
+    position: relative;
     display: flex;
+
+    .equally_description {
+      top: 220px;
+      right: -140px;
+      z-index: 2;
+      width: 202px;
+    }
+
+    .manually_description {
+      z-index: 2;
+      width: 202px;
+      bottom: 120px;
+      left: -120px;
+    }
   }
 }

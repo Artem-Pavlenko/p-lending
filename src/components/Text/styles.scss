@@ -1,7 +1,7 @@
 @import "../../utils/variables.scss";
 
 span {
-  white-space: normal !important;
+  white-space: normal;
   word-wrap: break-word !important;
 
   @media screen and (max-width: $tablet + px) {

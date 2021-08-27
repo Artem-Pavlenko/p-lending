@@ -19,10 +19,23 @@
   }
 
   .description_block {
+    position: relative;
     margin-left: 292px;
 
     @media screen and (max-width: $management + px) {
       margin: 0 auto;
+    }
+
+    .bill_description {
+      top: 290px;
+      right: -100px;
+      width: 234px;
+    }
+
+    .vouchers_description {
+      bottom: 110px;
+      right: 90px;
+      width: 234px;
     }
   }
 }

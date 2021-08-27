@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import IAnimationPaymentProps from "./props";
 import "./styles.scss";
-import { ArrowTitle, AnimationEqually, AnimationManually } from "..";
+import { ArrowTitle, AnimationEqually, AnimationManually, InfoText } from "..";
 import { IMAGES } from "../../assets";
 
 export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
@@ -24,6 +24,10 @@ export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
           transform: "rotate(-30deg)",
         }}
       />
+      <InfoText
+        text="Split the bill equally amongst everyone"
+        className="equally_description"
+      />
     </div>
 
     <div className="phone_wrapper">
@@ -39,6 +43,10 @@ export const DescriptionsPayment: FC<IAnimationPaymentProps> = ({
           right: "5px",
           transform: "rotate(160deg)",
         }}
+      />
+      <InfoText
+        text="Each person can pay for what they have had"
+        className="manually_description"
       />
       <AnimationManually isShowAnimation={isShowAnimation} />
     </div>

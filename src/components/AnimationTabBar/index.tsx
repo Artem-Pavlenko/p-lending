@@ -35,7 +35,7 @@ export const AnimationTabBar: FC<IAnimationTabBarProps> = () => {
         blockStyle={{
           position: "absolute",
           zIndex: -1,
-          top: "5px",
+          top: "1px",
           left: "240px",
           whiteSpace: "nowrap",
           fontSize: "28px",
