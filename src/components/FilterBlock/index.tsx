@@ -6,7 +6,6 @@ import { TitleBlock, Filter, ArrowTitle, AnimationTabBar } from "..";
 import { IMAGES } from "../../assets";
 import { useIsSmallerDimension } from "../../utils/hooks";
 import { DimensionTypes } from "../../utils/constants";
-import { InfoText } from "../InfoText";
 
 export const FilterBlock: FC<IFilterBlockProps> = () => {
   const isSmallScreen = useIsSmallerDimension(DimensionTypes.Filter);

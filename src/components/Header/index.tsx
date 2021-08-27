@@ -54,7 +54,7 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
           <Button onClick={showModalHandler} text="Join us" />
         </div>
       </div>
-      <img src={IMAGES.HEADER_PHONE} alt="" className="head-phone" />
+      <img src={IMAGES.HEADER_PHONE} alt="" className="head_phone" />
     </div>
   );
 };

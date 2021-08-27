@@ -2,9 +2,11 @@
 
 .header {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
   width: 100%;
+
   img {
     position: absolute;
     object-fit: cover;
@@ -27,12 +29,12 @@
       }
     }
 
-    &.head-phone {
+    &.head_phone {
       position: static;
       width: 550px;
       height: 553px;
       margin-top: 192px;
-      margin-left: 92px;
+      margin-left: 0px;
 
       @media screen and (max-width: $tablet + px) {
         position: absolute;
@@ -43,12 +45,11 @@
         opacity: 0.6;
         width: 290px;
         height: auto;
-        margin-left: 0;
       }
 
       @media screen and (max-width: 1442px) {
         margin-top: 0;
-        margin-left: 30%;
+        margin-left: 0;
       }
     }
   }
