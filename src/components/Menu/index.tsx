@@ -45,7 +45,7 @@ export const Menu: FC<IMenuProps> = () => {
             />
             <div className="yellow_ellipse sale" />
           </div>
-          <p>Discount</p>
+          <p className="discount">Discount</p>
           <span className="menu_description">Discounted items</span>
 
           {/* menu category block */}

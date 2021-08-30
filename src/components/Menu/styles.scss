@@ -64,6 +64,16 @@
         top: 132px;
         left: 12%;
         height: 205px;
+
+        @media screen and (max-width: $table + px) {
+          left: 20.5%;
+          top: 156px;
+        }
+
+        @media screen and (max-width: $phone + px) {
+          top: 132px;
+          left: 12%;
+        }
       }
 
       .yellow_ellipse {
@@ -118,16 +128,22 @@
 
     p {
       width: 100%;
-      margin: 0 0 8px;
+      padding-top: 5px;
+      margin: 0 0 23px;
       text-align: center;
       font-family: Indie Flower;
       font-style: normal;
       font-weight: normal;
       font-size: 30px;
       line-height: 24px;
+      background: $white;
 
       &.menu_category_title {
         text-align: left;
+      }
+
+      &.discount {
+        margin-top: 20px;
       }
 
       @media screen and (min-width: $tablet + px) {
@@ -167,8 +183,8 @@
     width: 46px;
     height: 46px;
 
-    @media screen and (max-width: $tablet + px) {
-      right: 28%;
+    @media screen and (max-width: $table + px) {
+      right: 29%;
     }
 
     @media screen and (max-width: $phone + px) {
