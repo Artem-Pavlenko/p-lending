@@ -117,6 +117,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   list={venueTypes}
                   checked={checkedVenue}
                   setChecked={setCheckedVenue}
+                  required={errorTrigger && !checkedVenue.trim()}
                 />
                 <div className="border" />
 
@@ -141,6 +142,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   list={POS}
                   checked={checkedSort}
                   setChecked={setCheckedSort}
+                  required={errorTrigger && !checkedSort.trim()}
                 />
               </div>
             </>
