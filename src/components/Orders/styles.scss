@@ -90,6 +90,9 @@
       font-size: 15px;
       height: 82px;
     }
+    @media screen and (max-width: 360px) {
+      top: 543px;
+    }
     @media screen and (max-width: $smallPhone + px) {
       top: 500px;
       font-size: 15px;
