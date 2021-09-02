@@ -22,6 +22,11 @@ button {
     line-height: 26px;
   }
 
+  &:disabled {
+    opacity: 0.7;
+    cursor: wait;
+  }
+
   &.white {
     background-color: $white;
     color: $killarney;

@@ -18,6 +18,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [checkedVenue, setCheckedVenue] = useState("");
   const [checkedSort, setCheckedSort] = useState("");
   const [errorTrigger, setErrorTrigger] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
   const isPhoneDimension = useIsSmallerDimension(DimensionTypes.Phone);
@@ -32,6 +33,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
       checkedVenue &&
       checkedSort
     ) {
+      setDisabled(true);
       const res = await addPartner({
         address,
         partnerName,
@@ -54,6 +56,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
       } else if (res?.error?.message) {
         console.log("E R R O R ->", res.error.message);
       }
+      setDisabled(false);
       onClose();
     } else {
       setErrorTrigger(true);
@@ -197,7 +200,12 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
             </>
           )}
 
-          <Button className="center" text="Join us" onClick={submitHandler} />
+          <Button
+            disabled={disabled}
+            className="center"
+            text="Join us"
+            onClick={submitHandler}
+          />
         </div>
 
         <img className="leaf" src={IMAGES.LEAF} alt="" />

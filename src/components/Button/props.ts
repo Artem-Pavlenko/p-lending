@@ -4,4 +4,5 @@ export default interface IButtonProps {
   onClick?: () => void;
   className?: string;
   type?: "submit" | "reset";
+  disabled?: boolean;
 }
