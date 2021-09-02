@@ -1,6 +1,7 @@
 export default interface IButtonProps {
   text: string;
   whiteStyle?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
+  type?: "submit" | "reset";
 }

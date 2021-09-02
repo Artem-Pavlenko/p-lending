@@ -19,3 +19,26 @@ export interface IPartner {
   venueType: string;
   posType: string;
 }
+
+export interface IResponse<Tres = {}> {
+  error: {
+    message: string;
+    code: number;
+  };
+  response: boolean;
+}
+
+export interface IPartnerResponse {
+  partnerStatus: string;
+  _id: string;
+  partnerName: string;
+  positionAtVenue: string;
+  address: string;
+  restaurantName: string;
+  websiteUrl: string;
+  venueType: string;
+  posType: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+}

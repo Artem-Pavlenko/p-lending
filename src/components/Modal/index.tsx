@@ -1,4 +1,4 @@
-import { FC, FormEvent, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 import IModalProps from "./props";
 import { POS, venueTypes } from "./data";
@@ -17,21 +17,47 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
   const [partnerName, setPartnerName] = useState("");
   const [checkedVenue, setCheckedVenue] = useState("");
   const [checkedSort, setCheckedSort] = useState("");
+  const [errorTrigger, setErrorTrigger] = useState(false);
 
   const isSmallDimension = useIsSmallerDimension(DimensionTypes.Tablet);
   const isPhoneDimension = useIsSmallerDimension(DimensionTypes.Phone);
 
-  const submitHandler = (e: FormEvent<HTMLFormElement>) => {
-    addPartner({
-      address,
-      partnerName,
-      positionAtVenue,
-      restaurantName,
-      websiteUrl,
-      venueType: checkedVenue,
-      posType: checkedSort,
-    });
-    onClose();
+  const submitHandler = async () => {
+    if (
+      restaurantName &&
+      positionAtVenue &&
+      address &&
+      websiteUrl &&
+      partnerName &&
+      checkedVenue &&
+      checkedSort
+    ) {
+      const res = await addPartner({
+        address,
+        partnerName,
+        positionAtVenue,
+        restaurantName,
+        websiteUrl,
+        venueType: checkedVenue,
+        posType: checkedSort,
+      });
+
+      if (res?._id) {
+        setAddress("");
+        setCheckedSort("");
+        setCheckedVenue("");
+        setRestaurantName("");
+        setPartnerName("");
+        setWebsiteUrl("");
+        setPositionAtVenue("");
+        // onClose();
+      } else if (res?.error?.message) {
+        console.log("E R R O R ->", res.error.message);
+      }
+      onClose();
+    } else {
+      setErrorTrigger(true);
+    }
   };
 
   useEffect(() => {
@@ -43,6 +69,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
     return () => {
       document.body.style.height = "auto";
       document.body.style.overflow = "auto";
+      setErrorTrigger(false);
     };
   }, [showModal, isSmallDimension]);
 
@@ -56,7 +83,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
 
         <Text type={TextStyles.ModalHeader}>Join us!</Text>
 
-        <form onSubmit={submitHandler}>
+        <div className="form">
           {isPhoneDimension ? (
             <>
               <Input
@@ -64,6 +91,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                 onChange={setPartnerName}
                 title="Name"
                 placeholder="Name"
+                required={errorTrigger && !partnerName.trim()}
               />
 
               <div className="fields_wrapper">
@@ -72,12 +100,14 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   onChange={setPositionAtVenue}
                   title="Position at the Venue"
                   placeholder="Position"
+                  required={errorTrigger && !positionAtVenue.trim()}
                 />
                 <Input
                   value={restaurantName}
                   onChange={setRestaurantName}
                   title="Name of Venue"
                   placeholder="Name"
+                  required={errorTrigger && !restaurantName.trim()}
                 />
                 <DropDownList
                   title="Type of venue"
@@ -92,6 +122,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   onChange={setAddress}
                   title="Address"
                   placeholder="Address"
+                  required={errorTrigger && !address.trim()}
                 />
 
                 <Input
@@ -99,6 +130,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   onChange={setWebsiteUrl}
                   title="Website"
                   placeholder="Website"
+                  required={errorTrigger && !websiteUrl.trim()}
                 />
 
                 <DropDownList
@@ -116,6 +148,7 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                 onChange={setPartnerName}
                 title="Name"
                 placeholder="Name"
+                required={errorTrigger && !partnerName.trim()}
               />
               <div className="fields_wrapper">
                 <Input
@@ -123,43 +156,49 @@ export const Modal: FC<IModalProps> = ({ showModal, onClose }) => {
                   onChange={setPositionAtVenue}
                   title="Position at the Venue"
                   placeholder="Position"
+                  required={errorTrigger && !positionAtVenue.trim()}
                 />
                 <Input
                   value={address}
                   onChange={setAddress}
                   title="Address"
                   placeholder="Address"
+                  required={errorTrigger && !address.trim()}
                 />
                 <Input
                   value={restaurantName}
                   onChange={setRestaurantName}
                   title="Name of Venue"
                   placeholder="Name"
+                  required={errorTrigger && !restaurantName.trim()}
                 />
                 <Input
                   value={websiteUrl}
                   onChange={setWebsiteUrl}
                   title="Website"
                   placeholder="Website"
+                  required={errorTrigger && !websiteUrl.trim()}
                 />
                 <DropDownList
                   title="Type of venue "
                   list={venueTypes}
                   checked={checkedVenue}
                   setChecked={setCheckedVenue}
+                  required={errorTrigger && !checkedVenue.trim()}
                 />
                 <DropDownList
                   title="What sort of POS do you have ?"
                   list={POS}
                   checked={checkedSort}
                   setChecked={setCheckedSort}
+                  required={errorTrigger && !checkedSort.trim()}
                 />
               </div>
             </>
           )}
 
-          <Button className="center" text="Join us" onClick={() => {}} />
-        </form>
+          <Button className="center" text="Join us" onClick={submitHandler} />
+        </div>
 
         <img className="leaf" src={IMAGES.LEAF} alt="" />
         <img className="bamboo" src={IMAGES.BAMBOO} alt="" />

@@ -3,4 +3,5 @@ export default interface IDropDownListProps {
   list: string[];
   checked: string;
   setChecked: (item: string) => void;
+  required?: boolean;
 }

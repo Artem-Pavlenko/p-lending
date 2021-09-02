@@ -8,8 +8,13 @@ export const Button: FC<IButtonProps> = ({
   whiteStyle,
   onClick,
   className,
+  type,
 }) => (
-  <button onClick={onClick} className={`${className} ${whiteStyle && "white"}`}>
+  <button
+    onClick={onClick}
+    className={`${className} ${whiteStyle && "white"}`}
+    type={type}
+  >
     {text}
   </button>
 );

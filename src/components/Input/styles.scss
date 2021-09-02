@@ -1,6 +1,7 @@
 @import "../../utils/variables.scss";
 
 .input_wrapper {
+  position: relative;
   width: 100%;
   max-width: 300px;
   display: flex;
@@ -60,5 +61,19 @@
       line-height: 19px;
       color: rgba(150, 150, 150, 0.5);
     }
+
+    &.red {
+      border-color: red;
+    }
+  }
+
+  .error {
+    color: red;
+    font-size: 13px;
+    line-height: 19px;
+    font-family: "Helvetica Now Display";
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
   }
 }

@@ -68,6 +68,20 @@
         background: url("../../assets/images/drop_down_list.svg") center
           no-repeat;
       }
+
+      &.required {
+        border-color: red;
+      }
+    }
+
+    .error {
+      color: red;
+      position: absolute;
+      bottom: 7px;
+      right: 35px;
+      font-size: 13px;
+      line-height: 19px;
+      font-family: "Helvetica Now Display";
     }
   }
 

@@ -51,7 +51,12 @@ export const Category: FC<ICategoryProps> = () => {
           <div className="tab_bar_items">
             <img src={IMAGES.ARROW} alt="" />
             {tabBar.map((item, index) => (
-              <NabBarItem img={item.img} name={item.name} index={index} />
+              <NabBarItem
+                key={item.name}
+                img={item.img}
+                name={item.name}
+                index={index}
+              />
             ))}
           </div>
         )}

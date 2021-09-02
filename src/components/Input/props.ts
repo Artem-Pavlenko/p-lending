@@ -4,4 +4,5 @@ export default interface IInputProps {
   name?: string;
   title?: string;
   placeholder?: string;
+  required?: boolean;
 }

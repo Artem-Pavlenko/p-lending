@@ -9,6 +9,7 @@ export const DropDownList: FC<IDropDownListProps> = ({
   list,
   checked,
   setChecked,
+  required,
 }) => {
   const [showList, setShowList] = useState(false);
 
@@ -26,7 +27,10 @@ export const DropDownList: FC<IDropDownListProps> = ({
     <div ref={wrapperRef} className="drop_down_list">
       <div onClick={listVisibilityHandler} className="checked_wrapper">
         <span className="title">{title}</span>
-        <span className="checked_item">{checked}</span>
+        <span className={`checked_item ${required && "required"}`}>
+          {checked}
+        </span>
+        {required && <span className="error">required field</span>}
       </div>
 
       <ul className={`list ${showList && "show"}`}>
