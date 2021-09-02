@@ -20,6 +20,7 @@
     font-family: Indie Flower;
     transition: all 0.3s linear;
     white-space: nowrap;
+    background: transparent !important;
 
     &.with_padding {
       padding-left: 180px;
