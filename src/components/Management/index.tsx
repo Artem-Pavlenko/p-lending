@@ -69,7 +69,7 @@ export const Management: FC<IManagementProps> = () => {
             />
 
             <InfoText
-              text="this is the voucher that was applied to the bill"
+              text="This is the voucher that was applied to the bill"
               className="vouchers_description"
             />
           </>

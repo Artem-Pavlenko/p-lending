@@ -58,7 +58,7 @@ export const Orders: FC<IOrdersProps> = () => {
           </span>
 
           <span className="text bill_description">
-            A total breakdown of a specific order{" "}
+            A total breakdown of a specific order
           </span>
 
           <span className="text restaurant_photo_description">
@@ -70,7 +70,7 @@ export const Orders: FC<IOrdersProps> = () => {
           <div className="screen_wrapper">
             <ArrowTitle
               text="Tab bar"
-              description="this is navigation tab bar"
+              description="This is navigation tab bar"
               img={IMAGES.ARROW_TAB_BAR}
               hover={isHoverTabBar}
               blockStyle={{
@@ -115,7 +115,7 @@ export const Orders: FC<IOrdersProps> = () => {
               arrowStyle={{
                 position: "absolute",
                 top: "73px",
-                left: "-7px",
+                left: "-23px",
                 width: "289px",
                 height: "308px",
               }}
@@ -195,7 +195,7 @@ export const Orders: FC<IOrdersProps> = () => {
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-715px",
+                top: "-745px",
                 left: "-162px",
                 width: "700px",
                 height: "700px",
@@ -213,8 +213,8 @@ export const Orders: FC<IOrdersProps> = () => {
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-280px",
-                left: "-162px",
+                top: "-310px",
+                left: "-165px",
                 width: "230px",
                 height: "230px",
               }}
@@ -226,13 +226,13 @@ export const Orders: FC<IOrdersProps> = () => {
               hover={isHoverBill}
               blockStyle={{
                 position: "absolute",
-                bottom: "-205px",
-                right: "373px",
+                bottom: "-190px",
+                right: "371px",
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-237px",
-                left: "156px",
+                top: "-252px",
+                left: "158px",
                 width: "220px",
                 height: "220px",
               }}

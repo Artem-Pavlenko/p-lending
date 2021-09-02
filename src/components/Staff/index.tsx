@@ -44,8 +44,8 @@ export const Staff: FC<IStaffProps> = () => {
           }}
           arrowStyle={{
             position: "absolute",
-            top: "82px",
-            left: "62px",
+            top: "78px",
+            left: "60px",
             width: "277px",
             height: "277px",
           }}
@@ -87,10 +87,10 @@ export const Staff: FC<IStaffProps> = () => {
           }}
           arrowStyle={{
             position: "absolute",
-            top: "-213px",
-            left: "193px",
+            top: "-195px",
+            left: "197px",
             width: "227px",
-            height: "227px",
+            height: "218px",
           }}
         />
         <img className="waiters_arrow" src={IMAGES.ARROW_WAITERS_2} alt="" />

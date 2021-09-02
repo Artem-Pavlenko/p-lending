@@ -145,7 +145,7 @@ export const Menu: FC<IMenuProps> = () => {
 
             <ArrowTitle
               text="Menu category"
-              description="these are the different menu categories"
+              description="These are the different menu categories"
               img={IMAGES.ARROW_MENU}
               hover={isHoverMenu}
               blockStyle={{
@@ -155,7 +155,7 @@ export const Menu: FC<IMenuProps> = () => {
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-188px",
+                top: "-215px",
                 left: "209px",
                 width: "185px",
                 height: "185px",
@@ -168,12 +168,12 @@ export const Menu: FC<IMenuProps> = () => {
               hover={isHoverDiscount}
               blockStyle={{
                 position: "absolute",
-                bottom: "-110px",
+                bottom: "-90px",
                 left: "400px",
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-371px",
+                top: "-375px",
                 left: "97px",
                 width: "330px",
                 height: "330px",
@@ -186,13 +186,13 @@ export const Menu: FC<IMenuProps> = () => {
               hover={isHoverItem}
               blockStyle={{
                 position: "absolute",
-                bottom: "-165px",
+                bottom: "-145px",
                 right: "220px",
               }}
               arrowStyle={{
                 position: "absolute",
-                top: "-166px",
-                left: "197px",
+                top: "-168px",
+                left: "198px",
                 width: "120px",
                 height: "120px",
               }}
