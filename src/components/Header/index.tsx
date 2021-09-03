@@ -35,12 +35,23 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
             marginBottom: isSmallDimension ? "16px" : "20px",
           }}
         >
-          Welcome to Panda, The all in one App for Bars, Restaurants and Event
-          Spaces
+          Welcome to Panda
+        </Text>
+
+        <Text
+          type={
+            isSmallDimension ? TextStyles.AdaptiveHeader : TextStyles.Header
+          }
+          style={{
+            maxWidth: "770px",
+            marginBottom: isSmallDimension ? "16px" : "20px",
+          }}
+        >
+          The all in one app for bars and restaurants
         </Text>
 
         <span className="header_title">
-          Search, Book, Order and Pay with Panda
+          Search, book, order and pay with Panda
         </span>
 
         <div

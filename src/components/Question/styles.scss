@@ -3,9 +3,11 @@
 .question {
   display: flex;
   margin-bottom: 65px;
+  min-width: 390px;
 
   @media screen and (max-width: $tablet + px) {
     margin-bottom: 25px;
+    min-width: auto;
   }
 
   .question_number {
@@ -52,11 +54,15 @@
     span {
       font-family: "Helvetica Now Display";
       min-height: 48px;
-      max-width: 202px;
+      max-width: 300px;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
+
+      &.big {
+        max-width: 400px;
+      }
 
       @media screen and (max-width: $table + px) {
         font-size: 16px;

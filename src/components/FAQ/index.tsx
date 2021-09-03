@@ -10,6 +10,7 @@ export const FAQ: FC<IFAQProps> = () => (
     <p>FAQ</p>
     <div className="questions">
       <Question
+        big
         number={1}
         header="Where can I download Panda from?"
         text="Panda is available on both App Store and Google play."
@@ -20,6 +21,7 @@ export const FAQ: FC<IFAQProps> = () => (
         text="Yes, absolutely."
       />
       <Question
+        big
         number={3}
         header="Which country are you operating in?"
         text="We are currently working on a launch in the UK, but we hope to be all over Europe and America."
