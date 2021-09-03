@@ -33,9 +33,11 @@ export const Header: FC<IHeaderProps> = ({ showModalHandler }) => {
           style={{
             maxWidth: "770px",
             marginBottom: isSmallDimension ? "16px" : "20px",
+            textShadow:
+              "1px 0px 0px #35644a, -1px 0px 0px #35644a, 2px 0px 0px #35644a",
           }}
         >
-          Welcome to Panda
+          Welcome To Panda
         </Text>
 
         <Text
